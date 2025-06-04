@@ -1,0 +1,120 @@
+{
+  "king": {
+    "name": "国王",
+    "age": 60,
+    "gender": "男",
+    "profession": "国王",
+    "stats": {
+      "strength": 40,
+      "intelligence": 75,
+      "agility": 30,
+      "luck": 50
+    },
+    "relationship": 0,
+    "description": "王国的统治者，智慧且公正，但最近因为王国的危机而忧心忡忡。",
+    "events": [
+      {
+        "time_of_day": "D1Morning",
+        "description": "国王正在城堡中召开会议，讨论王国的危机。"
+      }
+    ]
+  },
+  "princess": {
+    "name": "公主",
+    "age": 20,
+    "gender": "女",
+    "profession": "公主",
+    "stats": {
+      "strength": 25,
+      "intelligence": 70,
+      "agility": 60,
+      "luck": 65
+    },
+    "relationship": 0,
+    "description": "王国的公主，聪明且勇敢，对冒险充满向往。"
+  },
+  "village_elder": {
+    "name": "村长",
+    "age": 65,
+    "gender": "男",
+    "profession": "村长",
+    "stats": {
+      "strength": 30,
+      "intelligence": 65,
+      "agility": 25,
+      "luck": 45
+    },
+    "relationship": 0,
+    "description": "村庄的长者，经验丰富，了解许多古老的传说。"
+  },
+  "blacksmith": {
+    "name": "铁匠",
+    "age": 45,
+    "gender": "男",
+    "profession": "铁匠",
+    "stats": {
+      "strength": 75,
+      "intelligence": 50,
+      "agility": 40,
+      "luck": 35
+    },
+    "relationship": 0,
+    "description": "村庄的铁匠，能够打造各种武器和防具，为勇者提供装备支持。"
+  },
+  "merchant": {
+    "name": "商人",
+    "age": 40,
+    "gender": "男",
+    "profession": "商人",
+    "stats": {
+      "strength": 30,
+      "intelligence": 60,
+      "agility": 45,
+      "luck": 70
+    },
+    "relationship": 0,
+    "description": "旅行的商人，出售各种物品和药剂，也收集各地的情报。"
+  },
+  "mage": {
+    "name": "法师",
+    "age": 50,
+    "gender": "女",
+    "profession": "法师",
+    "stats": {
+      "strength": 20,
+      "intelligence": 85,
+      "agility": 35,
+      "luck": 55
+    },
+    "relationship": 0,
+    "description": "王国的法师，精通各种魔法，能够为勇者提供魔法支持。"
+  },
+  "knight_captain": {
+    "name": "骑士队长",
+    "age": 35,
+    "gender": "男",
+    "profession": "骑士",
+    "stats": {
+      "strength": 80,
+      "intelligence": 55,
+      "agility": 65,
+      "luck": 40
+    },
+    "relationship": 0,
+    "description": "王国骑士团的队长，勇猛善战，负责保卫王国的安全。"
+  },
+  "innkeeper": {
+    "name": "旅店老板",
+    "age": 50,
+    "gender": "男",
+    "profession": "旅店老板",
+    "stats": {
+      "strength": 40,
+      "intelligence": 55,
+      "agility": 35,
+      "luck": 60
+    },
+    "relationship": 0,
+    "description": "村庄旅店的老板，热情好客，了解村庄的各种消息。"
+  }
+}

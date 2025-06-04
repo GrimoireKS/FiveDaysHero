@@ -1,0 +1,29 @@
+{
+  "name": "five-days-hero",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --skip-plugins eslint",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "core-js": "^3.33.0",
+    "pinia": "^2.1.0",
+    "pinia-plugin-persistedstate": "^4.3.0",
+    "pixi.js": "^7.3.0",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.0"
+  }
+}
