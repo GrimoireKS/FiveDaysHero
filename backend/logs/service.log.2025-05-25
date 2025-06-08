@@ -1,0 +1,67 @@
+2025-05-25 09:53:41,291 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 09:53:41,292 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 09:53:41,292 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 09:53:48,563 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 09:54:50,547 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 09:54:50,547 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 09:54:50,547 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 09:54:57,013 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:32:10,720 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:32:10,720 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:32:10,720 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:32:16,814 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:33:32,221 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:33:32,221 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:33:32,221 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:33:38,376 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:33:38,376 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 17:34:24,699 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:34:24,700 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:34:24,700 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:34:30,719 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:34:30,719 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 17:34:54,519 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:34:54,519 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:34:54,519 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:35:00,932 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:35:00,933 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 17:35:39,950 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:35:39,950 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:35:39,950 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:35:47,219 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:35:47,220 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 17:36:31,019 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 17:36:31,019 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 17:36:31,019 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 17:36:36,753 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 17:36:36,753 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 18:53:45,543 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 18:53:45,543 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 18:53:45,543 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 18:53:51,873 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 18:53:51,876 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 18:54:19,036 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 18:54:19,036 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 18:54:19,036 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 18:54:26,004 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 18:54:26,004 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": None,\n    \"gender\": \"female\",\n    \"profession\": None,\n    \"age\": None,\...
+2025-05-25 18:55:13,533 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 18:55:13,533 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 18:55:13,533 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 18:55:20,167 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 18:55:20,167 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": \"female\",\n    \"profession\": null,\n    \"age\": null,\...
+2025-05-25 18:55:20,168 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 18:55:20,169 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 18:55:20,169 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 18:55:29,210 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 18:55:29,210 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": \"金冠\",\n  \"chest\": \"华丽的长裙\",\n  \"legs\": null,\n  \"hands\": [\"权杖\"],\n  \"fee...
+2025-05-25 19:17:01,314 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 19:17:01,314 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 19:17:01,314 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 19:17:07,040 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 19:17:07,040 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": null,\n    \"profession\": \"勇者\",\n    \"age\": null,\n   ...
+2025-05-25 19:17:07,040 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-05-25 19:17:07,040 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/system_prompt.txt，使用默认提示
+2025-05-25 19:17:07,040 - llm.chat - WARNING - 使用了硬编码的 API 密钥。建议通过环境变量 ARK_API_KEY 设置。
+2025-05-25 19:17:11,404 - llm.chat - INFO - 成功获取 API 响应
+2025-05-25 19:17:11,404 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": null,\n  \"chest\": null,\n  \"legs\": null,\n  \"hands\": [],\n  \"feet\": null,\n ...

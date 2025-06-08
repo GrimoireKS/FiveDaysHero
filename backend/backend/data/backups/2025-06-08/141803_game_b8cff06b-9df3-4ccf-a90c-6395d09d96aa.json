@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "game_id": "game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa",
+    "created_at": "2025-06-08T14:17:28.042864",
+    "last_accessed": "2025-06-08T14:18:03.738907",
+    "expires_at": "2025-06-15T14:17:28.042864",
+    "updated_at": "2025-06-08T14:18:03.738907",
+    "version": "1.0",
+    "data_format": "json"
+  },
+  "game_state": {
+    "day": 1,
+    "player": {
+      "name": "测试勇者",
+      "stats": {
+        "hp": 100,
+        "mp": 100,
+        "strength": 10,
+        "intelligence": 10,
+        "agility": 10,
+        "luck": 10,
+        "力量": 10,
+        "智力": 10,
+        "敏捷": 10,
+        "幸运": 10
+      },
+      "inventory": [],
+      "equipment": {}
+    },
+    "world": {
+      "weather": "晴天",
+      "current_location": "村庄",
+      "current_time": "晚上"
+    },
+    "npc": {
+      "village_chief": {
+        "name": "村长",
+        "profession": "村长",
+        "relationship": 0
+      },
+      "村长": {
+        "relationship": 5
+      }
+    },
+    "events": [],
+    "history": [
+      "第1天: 在这一天里，测试勇者在村庄中心广场与村民们进行了广泛的交流。了解到村庄的日常情况和一些历史传说，还得知村外森林有神秘宝藏和怪物。晚上与老村长交流后，获得了老村长的鼓励。"
+    ],
+    "created_at": "2025-06-08T14:17:28.042403",
+    "last_action": null
+  }
+}

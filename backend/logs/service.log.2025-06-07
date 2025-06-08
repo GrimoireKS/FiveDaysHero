@@ -1,0 +1,1066 @@
+2025-06-07 00:01:02,573 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-07 00:01:02,574 - llm.story_engine - INFO - 开始剧情推演
+2025-06-07 00:01:24,388 - llm.story_engine - INFO - LLM推演完成，开始解析结果
+2025-06-07 00:01:24,388 - llm.story_engine - ERROR - 未找到推演结果JSON内容
+2025-06-07 00:01:24,388 - llm.story_engine - ERROR - 剧情推演失败: 未找到 <推演结果> 标签中的 JSON 内容。
+2025-06-07 10:12:44,763 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-07 10:12:44,763 - llm.story_engine - INFO - 开始剧情推演
+2025-06-07 10:12:44,763 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 10:12:44,763 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-07 10:13:34,416 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 10:13:34,417 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<推演结果>\n```json\n{\n  \"narrative_description\": \"勇者走向正在和其他村民讨论最近异象的村长，恭敬地询问关于魔王的传说。村长停下与村民的交谈，看了看眼前充满好奇和决...
+2025-06-07 10:13:34,417 - llm.story_engine - INFO - LLM推演完成，开始解析结果
+2025-06-07 10:13:34,418 - llm.story_engine - INFO - 剧情推演成功完成
+2025-06-07 12:15:16,088 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-07 12:15:16,088 - llm.story_engine - INFO - 开始剧情推演
+2025-06-07 12:15:16,089 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 12:15:16,089 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-07 12:15:40,923 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 12:15:40,923 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<推演结果>\n```json\n{\n  \"narrative_description\": \"勇者走向正在和其他村民讨论最近异象的村长，恭敬地询问关于魔王的传说。村长停下与村民的交谈，认真地看向勇者，开始讲...
+2025-06-07 12:15:40,924 - llm.story_engine - INFO - LLM推演完成，开始解析结果
+2025-06-07 12:15:40,924 - llm.story_engine - INFO - 剧情推演成功完成
+2025-06-07 22:33:22,799 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:33:22,800 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:33:22,800 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:33:22,800 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:33:22,803 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:33:22,803 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:33:22,982 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:33:22,983 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:33:22,983 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:33:22,983 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:33:22,983 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:33:22,983 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:36:11,022 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 22:36:11,023 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:36:11,024 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-07 22:36:19,161 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:36:19,161 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": null,\n    \"profession\": \"使用魔法的战士\",\n    \"age\": null,...
+2025-06-07 22:36:19,162 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:36:19,163 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-07 22:36:23,484 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:36:23,485 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": null,\n  \"chest\": null,\n  \"legs\": null,\n  \"hands\": [],\n  \"feet\": null,\n ...
+2025-06-07 22:36:23,489 - services.game_data_service - INFO - 开始创建新游戏
+2025-06-07 22:36:23,489 - services.game_data_service - ERROR - 初始数据中玩家信息不完整
+2025-06-07 22:36:23,489 - services.game_data_service - ERROR - 初始游戏数据验证失败
+2025-06-07 22:43:36,176 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 22:43:36,514 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:43:36,514 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:43:36,514 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:43:36,515 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:43:36,515 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:43:36,515 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:48:02,965 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 22:48:03,151 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:48:03,151 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:48:03,151 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:48:03,151 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:48:03,151 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:48:03,151 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:48:15,676 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 22:50:56,878 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:50:56,879 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:50:56,879 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:50:56,879 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:50:56,879 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:50:56,879 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:50:57,059 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:50:57,059 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:50:57,059 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:50:57,059 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:50:57,060 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:50:57,060 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:51:57,199 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 22:51:57,199 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:51:57,199 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:52:04,237 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:52:04,242 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": null,\n    \"profession\": \"使用魔法的战士\",\n    \"age\": null,...
+2025-06-07 22:52:04,244 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:52:04,245 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:52:09,930 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:52:09,930 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": null,\n  \"chest\": null,\n  \"legs\": null,\n  \"hands\": [],\n  \"feet\": null,\n ...
+2025-06-07 22:52:09,931 - services.game_data_service - INFO - 开始创建新游戏
+2025-06-07 22:52:09,931 - services.session_service - INFO - 开始创建新的游戏会话
+2025-06-07 22:52:09,932 - utils.file_utils - ERROR - 原子性写入文件失败 backend/data/games/game_5f0294ef-6c53-4e28-88bc-331563b1cce3.json: Object of type datetime is not JSON serializable
+2025-06-07 22:52:09,932 - services.file_storage_service - ERROR - 游戏文件创建失败: game_5f0294ef-6c53-4e28-88bc-331563b1cce3
+2025-06-07 22:52:09,932 - services.session_service - ERROR - 游戏会话创建失败: game_5f0294ef-6c53-4e28-88bc-331563b1cce3
+2025-06-07 22:52:09,932 - services.game_data_service - ERROR - 新游戏创建失败 - 会话服务返回None
+2025-06-07 22:54:07,804 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 22:54:07,980 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:54:07,980 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:54:07,980 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:54:07,980 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:54:07,980 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:54:07,980 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:55:03,752 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 22:55:03,752 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:55:03,752 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:55:10,050 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:55:10,050 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": null,\n    \"profession\": \"使用魔法的战士\",\n    \"age\": null,...
+2025-06-07 22:55:10,050 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:55:10,051 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:55:13,857 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:55:13,858 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": null,\n  \"chest\": null,\n  \"legs\": null,\n  \"hands\": [],\n  \"feet\": null,\n ...
+2025-06-07 22:55:13,859 - services.game_data_service - INFO - 开始创建新游戏
+2025-06-07 22:55:13,859 - services.session_service - INFO - 开始创建新的游戏会话
+2025-06-07 22:55:13,861 - services.file_storage_service - INFO - 游戏文件创建成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-07 22:55:13,861 - services.session_service - INFO - 游戏会话创建成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-07 22:55:13,861 - services.game_data_service - INFO - 新游戏创建成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-07 22:57:24,978 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:57:24,978 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:57:24,978 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:57:24,978 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:57:24,978 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:57:24,978 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:57:25,143 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 22:57:25,143 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 22:57:25,143 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 22:57:25,143 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 22:57:25,143 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 22:57:25,144 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 22:57:30,298 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 22:57:30,298 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:57:30,298 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:57:35,699 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:57:35,700 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n    \"name\": null,\n    \"gender\": null,\n    \"profession\": \"使用魔法的战士\",\n    \"age\": null,...
+2025-06-07 22:57:35,700 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:57:35,700 - llm.chat - INFO - 成功从文件加载系统提示: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/system_prompt.txt
+2025-06-07 22:57:39,296 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:57:39,296 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<提取结果>\n{\n  \"head\": null,\n  \"chest\": null,\n  \"legs\": null,\n  \"hands\": [],\n  \"feet\": null,\n ...
+2025-06-07 22:57:39,299 - services.game_data_service - INFO - 开始创建新游戏
+2025-06-07 22:57:39,300 - services.session_service - INFO - 开始创建新的游戏会话
+2025-06-07 22:57:39,301 - services.file_storage_service - INFO - 游戏文件创建成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:57:39,301 - services.session_service - INFO - 游戏会话创建成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:57:39,302 - services.game_data_service - INFO - 新游戏创建成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:58:09,082 - api.game_api - INFO - 收到游戏行动处理请求
+2025-06-07 22:58:09,082 - api.game_api - INFO - 开始处理玩家行动: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:58:09,083 - services.fixed_events_service - INFO - 成功加载 13 个固定事件
+2025-06-07 22:58:09,084 - services.fixed_events_service - INFO - 固定事件服务初始化完成
+2025-06-07 22:58:09,084 - services.game_action_service - INFO - 游戏行动处理服务初始化完成
+2025-06-07 22:58:09,084 - services.game_action_service - INFO - 开始处理玩家行动: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:58:09,087 - services.game_action_service - INFO - 调用LLM进行游戏推演
+2025-06-07 22:58:09,087 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 22:58:47,170 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 22:58:47,170 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "```json\n{\n  \"player_actions\": {\n    \"morning\": \"在村庄广场与村民交流，了解村庄日常情况和常见任务。\",\n    \"afternoon\": \"...
+2025-06-07 22:58:47,179 - services.game_data_service - INFO - 游戏天数推进成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9, 第2天
+2025-06-07 22:58:47,179 - services.game_action_service - INFO - 玩家行动处理完成: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 22:58:47,181 - api.game_api - INFO - 游戏行动处理完成: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:00:34,902 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:00:35,176 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:00:35,176 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:00:35,176 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:00:35,176 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:00:35,176 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:00:35,176 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:00:42,838 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 23:02:13,030 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:02:13,198 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:02:13,198 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:02:13,199 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:02:13,199 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:02:13,199 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:02:13,199 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:02:13,199 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:02:13,199 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:02:13,199 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:02:13,199 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:03:05,662 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:03:05,830 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:03:05,830 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:03:05,830 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:03:05,830 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:03:05,830 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:03:05,830 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:03:05,830 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:03:05,830 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:03:05,831 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:03:05,831 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:03:22,963 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:03:23,131 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:03:23,131 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:03:23,131 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:03:23,131 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:03:23,131 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:03:23,131 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:03:23,131 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:03:23,131 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:03:23,131 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:03:23,131 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:05:00,025 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:05:00,298 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:05:00,298 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:05:00,299 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:05:00,299 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:05:00,299 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:05:00,299 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:05:00,299 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:05:00,299 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:05:00,299 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:05:00,299 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:05:41,050 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-07 23:05:41,050 - services.game_data_service - DEBUG - 开始获取游戏状态: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,050 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-07 23:05:41,050 - services.session_service - DEBUG - 获取游戏会话数据: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,050 - services.session_service - DEBUG - 验证会话有效性
+2025-06-07 23:05:41,050 - services.session_service - DEBUG - 验证游戏会话: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,051 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-07 23:05:41,051 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-07 23:05:41,051 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-07 23:05:41,051 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:05:41,051 - services.session_service - DEBUG - 游戏会话验证成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,051 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-07 23:05:41,051 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:05:41,051 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-07 23:05:41,051 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-07 23:05:41,052 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:05:41,053 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:05:41,053 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,053 - services.session_service - DEBUG - 获取游戏会话数据成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,053 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-07 23:05:41,053 - services.session_service - DEBUG - 会话创建时间: 2025-06-07T22:57:39.300829
+2025-06-07 23:05:41,053 - services.session_service - DEBUG - 最后访问时间: 2025-06-07 23:05:41.051950
+2025-06-07 23:05:41,053 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-07 23:05:41,053 - services.game_data_service - DEBUG - 游戏状态获取成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:05:41,053 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-07 23:05:41,053 - services.game_data_service - DEBUG - 当前天数: 2
+2025-06-07 23:06:11,509 - services.game_data_service - DEBUG - 开始获取游戏状态: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,509 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 获取游戏会话数据: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 验证会话有效性
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 验证游戏会话: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-07 23:06:11,509 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-07 23:06:11,510 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:11,510 - services.session_service - DEBUG - 游戏会话验证成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,510 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-07 23:06:11,510 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:11,510 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-07 23:06:11,510 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-07 23:06:11,510 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:06:11,511 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:11,511 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,511 - services.session_service - DEBUG - 获取游戏会话数据成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,511 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-07 23:06:11,511 - services.session_service - DEBUG - 会话创建时间: 2025-06-07T22:57:39.300829
+2025-06-07 23:06:11,511 - services.session_service - DEBUG - 最后访问时间: 2025-06-07 23:06:11.510472
+2025-06-07 23:06:11,511 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-07 23:06:11,511 - services.game_data_service - DEBUG - 游戏状态获取成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:11,511 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-07 23:06:11,511 - services.game_data_service - DEBUG - 当前天数: 2
+2025-06-07 23:06:29,963 - services.game_data_service - DEBUG - 开始获取游戏状态: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,964 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 获取游戏会话数据: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 验证会话有效性
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 验证游戏会话: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-07 23:06:29,964 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 游戏会话验证成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,964 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-07 23:06:29,964 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:29,964 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-07 23:06:29,964 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-07 23:06:29,964 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:06:29,965 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-07 23:06:29,965 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,965 - services.session_service - DEBUG - 获取游戏会话数据成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,965 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-07 23:06:29,965 - services.session_service - DEBUG - 会话创建时间: 2025-06-07T22:57:39.300829
+2025-06-07 23:06:29,965 - services.session_service - DEBUG - 最后访问时间: 2025-06-07 23:06:29.964688
+2025-06-07 23:06:29,965 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-07 23:06:29,966 - services.game_data_service - DEBUG - 游戏状态获取成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-07 23:06:29,966 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-07 23:06:29,966 - services.game_data_service - DEBUG - 当前天数: 2
+2025-06-07 23:08:43,048 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:08:43,048 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:08:43,048 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:08:43,048 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:08:43,048 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:08:43,048 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:08:43,048 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:08:43,048 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:08:43,048 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:08:43,048 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:08:48,075 - utils.cleanup_tasks - INFO - 清理任务调度器停止成功
+2025-06-07 23:09:39,011 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:09:39,012 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:09:39,012 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:09:39,012 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:09:39,012 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:09:39,012 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:09:39,012 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:09:39,012 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:09:39,012 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:09:39,012 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-07 23:09:39,177 - utils.file_utils - DEBUG - 目录已确保存在: backend/data
+2025-06-07 23:09:39,178 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-07 23:09:39,178 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups
+2025-06-07 23:09:39,178 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/logs
+2025-06-07 23:09:39,178 - services.file_storage_service - INFO - 文件存储服务初始化完成，数据目录: backend/data
+2025-06-07 23:09:39,178 - services.session_service - INFO - 会话管理服务初始化完成
+2025-06-07 23:09:39,178 - utils.cleanup_tasks - INFO - 清理任务配置完成
+2025-06-07 23:09:39,178 - utils.cleanup_tasks - INFO - 清理任务管理器初始化完成
+2025-06-07 23:09:39,178 - utils.cleanup_tasks - INFO - 清理任务调度器主循环开始
+2025-06-07 23:09:39,178 - utils.cleanup_tasks - INFO - 清理任务调度器启动成功
+2025-06-08 00:09:39,461 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 00:09:39,462 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 00:09:39,463 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 00:09:39,464 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 00:09:39,464 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 00:09:39,466 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 00:09:39,466 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 00:09:39,466 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 00:09:39,466 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 00:09:39,466 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 00:09:39,608 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 00:09:39,608 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 00:09:39,608 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 00:09:39,608 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 00:09:39,609 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 00:09:39,610 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 00:09:39,610 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 00:09:39,610 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 00:09:39,610 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 00:09:39,610 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 00:09:39,611 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 00:09:39,611 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 00:09:39,611 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 00:09:39,611 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 00:09:39,611 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 00:09:39,611 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 01:09:39,959 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 01:09:39,960 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 01:09:39,963 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 01:09:39,963 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 01:09:39,963 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 01:09:39,964 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 01:09:39,964 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 01:09:39,964 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 01:09:39,964 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 01:09:39,965 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 01:09:40,104 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 01:09:40,104 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 01:09:40,105 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 01:09:40,105 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 01:09:40,110 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 01:09:40,110 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 01:09:40,110 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 01:09:40,111 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 01:09:40,111 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 01:09:40,111 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 01:09:40,112 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 01:09:40,112 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 01:09:40,112 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 01:09:40,112 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 01:09:40,112 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 01:09:40,112 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 02:00:40,345 - utils.cleanup_tasks - INFO - 开始清理过期游戏文件
+2025-06-08 02:00:40,349 - services.file_storage_service - INFO - 过期游戏清理完成，删除了 0 个文件
+2025-06-08 02:00:40,349 - services.session_service - INFO - 过期会话清理完成，删除了 0 个会话
+2025-06-08 02:00:40,349 - utils.cleanup_tasks - INFO - 过期游戏文件清理完成，删除了 0 个文件
+2025-06-08 02:00:40,516 - utils.cleanup_tasks - INFO - 开始清理过期游戏文件
+2025-06-08 02:00:40,517 - utils.file_utils - INFO - 在目录 backend/data/games 中发现 0 个过期文件
+2025-06-08 02:00:40,518 - utils.file_utils - INFO - 清理完成，删除了 0 个过期文件
+2025-06-08 02:00:40,522 - services.file_storage_service - INFO - 过期游戏清理完成，删除了 0 个文件
+2025-06-08 02:00:40,523 - services.session_service - INFO - 过期会话清理完成，删除了 0 个会话
+2025-06-08 02:00:40,523 - utils.cleanup_tasks - INFO - 过期游戏文件清理完成，删除了 0 个文件
+2025-06-08 02:09:40,412 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 02:09:40,413 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 02:09:40,415 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 02:09:40,415 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 02:09:40,415 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 02:09:40,416 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 02:09:40,416 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 02:09:40,417 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 02:09:40,417 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 02:09:40,417 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 02:09:40,586 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 02:09:40,586 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 02:09:40,587 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 02:09:40,588 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 02:09:40,590 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 02:09:40,590 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 02:09:40,591 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 02:09:40,591 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 02:09:40,591 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 02:09:40,591 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 02:09:40,591 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 02:09:40,591 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 02:09:40,592 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 02:09:40,592 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 02:09:40,592 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 02:09:40,592 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 03:00:40,772 - utils.cleanup_tasks - INFO - 开始清理过期日志文件
+2025-06-08 03:00:40,773 - utils.cleanup_tasks - WARNING - 日志目录不存在: backend/logs
+2025-06-08 03:00:40,961 - utils.cleanup_tasks - INFO - 开始清理过期日志文件
+2025-06-08 03:00:40,961 - utils.cleanup_tasks - WARNING - 日志目录不存在: backend/logs
+2025-06-08 03:09:40,946 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 03:09:40,946 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 03:09:40,950 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 03:09:40,950 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 03:09:40,950 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 03:09:40,951 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 03:09:40,951 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 03:09:40,952 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 03:09:40,952 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 03:09:40,952 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 03:09:41,125 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 03:09:41,125 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 03:09:41,125 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 03:09:41,126 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 03:09:41,129 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 03:09:41,129 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 03:09:41,129 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 03:09:41,129 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 03:09:41,129 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 03:09:41,129 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 03:09:41,130 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 03:09:41,130 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 03:09:41,130 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 03:09:41,130 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 03:09:41,130 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 03:09:41,130 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 04:00:41,375 - utils.cleanup_tasks - INFO - 开始清理过期备份文件
+2025-06-08 04:00:41,381 - utils.cleanup_tasks - INFO - 过期备份文件清理完成，删除了 0 个目录
+2025-06-08 04:00:41,551 - utils.cleanup_tasks - INFO - 开始清理过期备份文件
+2025-06-08 04:00:41,556 - utils.cleanup_tasks - INFO - 过期备份文件清理完成，删除了 0 个目录
+2025-06-08 04:09:41,471 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 04:09:41,472 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 04:09:41,473 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 04:09:41,474 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 04:09:41,474 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 04:09:41,475 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 04:09:41,475 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 04:09:41,475 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 04:09:41,475 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 04:09:41,475 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 04:09:41,655 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 04:09:41,656 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 04:09:41,656 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 04:09:41,656 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 04:09:41,659 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 04:09:41,659 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 04:09:41,659 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 04:09:41,659 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 04:09:41,660 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 04:09:41,660 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 04:09:41,660 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 04:09:41,660 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 04:09:41,661 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 04:09:41,661 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 04:09:41,661 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 04:09:41,661 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 05:09:41,903 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 05:09:41,904 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 05:09:41,905 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 05:09:41,906 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 05:09:41,906 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 05:09:41,907 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 05:09:41,907 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 05:09:41,907 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 05:09:41,907 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 05:09:41,907 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 05:09:42,077 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 05:09:42,077 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 05:09:42,077 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 05:09:42,078 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 05:09:42,080 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 05:09:42,080 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 05:09:42,080 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 05:09:42,080 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 05:09:42,080 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 05:09:42,080 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 05:09:42,081 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 05:09:42,081 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 05:09:42,081 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 05:09:42,081 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 05:09:42,082 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 05:09:42,082 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 06:09:42,342 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 06:09:42,343 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 06:09:42,350 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 06:09:42,350 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 06:09:42,350 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 06:09:42,351 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 06:09:42,351 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 06:09:42,351 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 06:09:42,351 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 06:09:42,351 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 06:09:42,499 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 06:09:42,499 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 06:09:42,499 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 06:09:42,500 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 06:09:42,504 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 06:09:42,504 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 06:09:42,505 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 06:09:42,505 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 06:09:42,505 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 06:09:42,505 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 06:09:42,506 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 06:09:42,506 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 06:09:42,506 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 06:09:42,506 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 06:09:42,506 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 06:09:42,506 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 07:09:42,895 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 07:09:42,896 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 07:09:42,899 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 07:09:42,900 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 07:09:42,900 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 07:09:42,901 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 07:09:42,901 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 07:09:42,901 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 07:09:42,901 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 07:09:42,901 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 07:09:43,037 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 07:09:43,038 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 07:09:43,038 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 07:09:43,038 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 07:09:43,041 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 07:09:43,041 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 07:09:43,041 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 07:09:43,041 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 07:09:43,041 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 07:09:43,041 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 07:09:43,042 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 07:09:43,042 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 07:09:43,042 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 07:09:43,042 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 07:09:43,043 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 07:09:43,043 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 08:09:43,346 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 08:09:43,347 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 08:09:43,349 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 08:09:43,350 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 08:09:43,350 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 08:09:43,351 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 08:09:43,351 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 08:09:43,351 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 08:09:43,351 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 08:09:43,351 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 08:09:43,496 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 08:09:43,496 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 08:09:43,496 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 08:09:43,496 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 08:09:43,499 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 08:09:43,499 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 08:09:43,499 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 08:09:43,499 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 08:09:43,499 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 08:09:43,499 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 08:09:43,500 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 08:09:43,500 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 08:09:43,500 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 08:09:43,501 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 08:09:43,501 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 08:09:43,501 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 09:09:43,833 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 09:09:43,833 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 09:09:43,835 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 09:09:43,835 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 09:09:43,835 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 09:09:43,837 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 09:09:43,837 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 09:09:43,837 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 09:09:43,837 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 09:09:43,837 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 09:09:44,027 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 09:09:44,027 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 09:09:44,027 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 09:09:44,028 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 09:09:44,032 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 09:09:44,032 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 09:09:44,033 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 09:09:44,034 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 09:09:44,034 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 09:09:44,034 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 09:09:44,035 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 09:09:44,035 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 09:09:44,035 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 09:09:44,035 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 09:09:44,035 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 09:09:44,035 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 10:09:44,156 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 10:09:44,156 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 10:09:44,159 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 10:09:44,159 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 10:09:44,160 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 10:09:44,162 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 10:09:44,162 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 10:09:44,162 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 10:09:44,162 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 10:09:44,162 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 10:09:44,359 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 10:09:44,359 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 10:09:44,359 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 10:09:44,359 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 10:09:44,363 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 10:09:44,363 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 10:09:44,363 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 10:09:44,363 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 10:09:44,364 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 10:09:44,364 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 10:09:44,365 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 10:09:44,365 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 10:09:44,365 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 10:09:44,366 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 10:09:44,366 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 10:09:44,366 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 11:09:44,526 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 11:09:44,526 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 11:09:44,531 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 11:09:44,532 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 11:09:44,533 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 11:09:44,535 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 11:09:44,535 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 11:09:44,535 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 11:09:44,535 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 11:09:44,535 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 11:09:44,715 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 11:09:44,715 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 11:09:44,716 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 11:09:44,716 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 11:09:44,719 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 11:09:44,719 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 11:09:44,719 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 11:09:44,719 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 11:09:44,720 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 11:09:44,720 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 11:09:44,721 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 11:09:44,721 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 11:09:44,722 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 11:09:44,722 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 11:09:44,722 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 11:09:44,722 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 12:09:45,033 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 12:09:45,033 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 12:09:45,036 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 12:09:45,036 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 12:09:45,037 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 12:09:45,038 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 12:09:45,038 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 12:09:45,038 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 12:09:45,039 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 12:09:45,039 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 12:09:45,279 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 12:09:45,279 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 12:09:45,279 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 12:09:45,279 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 12:09:45,282 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 12:09:45,282 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 12:09:45,282 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 12:09:45,282 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 12:09:45,283 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 12:09:45,283 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 12:09:45,284 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 12:09:45,285 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 12:09:45,285 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 12:09:45,285 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 12:09:45,285 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 12:09:45,285 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 13:09:45,492 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 13:09:45,492 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 13:09:45,494 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 13:09:45,495 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 13:09:45,495 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 13:09:45,497 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 13:09:45,498 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 13:09:45,498 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 13:09:45,498 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 13:09:45,498 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 13:09:45,714 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 13:09:45,715 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 13:09:45,715 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 13:09:45,715 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 13:09:45,718 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 13:09:45,718 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 13:09:45,719 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 13:09:45,719 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 13:09:45,719 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 13:09:45,719 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 13:09:45,722 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 13:09:45,722 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 13:09:45,722 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 13:09:45,722 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 13:09:45,722 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 13:09:45,722 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 14:09:45,746 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:09:45,746 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:09:45,750 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 14:09:45,750 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:09:45,750 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:09:45,754 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 14:09:45,754 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 14:09:45,754 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 14:09:45,754 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 14:09:45,754 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 14:09:45,942 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 14:09:45,942 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:09:45,942 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:09:45,942 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:09:45,944 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_3663fe63-021c-4f78-8f66-d972e917e969.json
+2025-06-08 14:09:45,944 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_3663fe63-021c-4f78-8f66-d972e917e969
+2025-06-08 14:09:45,945 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 14:09:45,945 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:09:45,945 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:09:45,945 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:09:45,946 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_729a272c-e6b4-4459-8dd9-db527511b1c9.json
+2025-06-08 14:09:45,947 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_729a272c-e6b4-4459-8dd9-db527511b1c9
+2025-06-08 14:09:45,947 - services.file_storage_service - DEBUG - 列出游戏完成，共 2 个游戏
+2025-06-08 14:09:45,947 - services.file_storage_service - DEBUG - 存储统计信息获取成功
+2025-06-08 14:09:45,947 - services.session_service - DEBUG - 会话统计信息获取成功
+2025-06-08 14:09:45,947 - utils.cleanup_tasks - DEBUG - 存储使用检查完成: 0.03 MB
+2025-06-08 14:17:28,041 - services.game_data_service - INFO - 游戏数据服务初始化完成
+2025-06-08 14:17:28,042 - services.game_data_service - INFO - 开始创建新游戏
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 初始数据键: ['day', 'player', 'world', 'npc']
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 验证初始游戏数据
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 初始数据验证通过
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 标准化初始游戏数据
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 初始游戏数据标准化完成
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 标准化后的数据键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:17:28,042 - services.game_data_service - DEBUG - 调用会话服务创建会话
+2025-06-08 14:17:28,042 - services.session_service - INFO - 开始创建新的游戏会话
+2025-06-08 14:17:28,042 - services.session_service - DEBUG - 初始数据键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:17:28,042 - services.session_service - DEBUG - 生成游戏ID
+2025-06-08 14:17:28,042 - utils.file_utils - DEBUG - 生成新的游戏ID: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,042 - services.session_service - DEBUG - 生成的游戏ID: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,042 - services.session_service - DEBUG - 调用存储服务创建游戏文件
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 开始创建游戏文件: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 验证游戏ID
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 游戏文件路径: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 创建游戏元数据
+2025-06-08 14:17:28,042 - utils.json_utils - DEBUG - 创建游戏元数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 游戏数据创建完成，数据键: ['metadata', 'game_state']
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 验证游戏数据结构
+2025-06-08 14:17:28,042 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 数据结构验证通过
+2025-06-08 14:17:28,042 - services.file_storage_service - DEBUG - 开始原子性写入文件
+2025-06-08 14:17:28,043 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:17:28,043 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,043 - services.file_storage_service - INFO - 游戏文件创建成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,043 - services.file_storage_service - DEBUG - 文件大小: 981 字节
+2025-06-08 14:17:28,043 - services.session_service - INFO - 游戏会话创建成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,043 - services.session_service - DEBUG - 游戏数据大小: 419 字符
+2025-06-08 14:17:28,043 - services.game_data_service - INFO - 新游戏创建成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,043 - services.game_data_service - DEBUG - 游戏数据大小: 419 字符
+2025-06-08 14:17:28,048 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,048 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:17:28,048 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:17:28,048 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:17:28,048 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,048 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,048 - services.fixed_events_service - DEBUG - 加载固定事件配置: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/events/fixed_events.json
+2025-06-08 14:17:28,048 - services.fixed_events_service - DEBUG - 加载固定事件: D1Morning
+2025-06-08 14:17:28,048 - services.fixed_events_service - DEBUG - 加载固定事件: D1Evening
+2025-06-08 14:17:28,048 - services.fixed_events_service - DEBUG - 加载固定事件: D2Morning
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D2Afternoon
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D3Morning
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D3Afternoon
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D3Evening
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D4Morning
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D4Afternoon
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D4Evening
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D5Morning
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D5Afternoon
+2025-06-08 14:17:28,049 - services.fixed_events_service - DEBUG - 加载固定事件: D5Evening
+2025-06-08 14:17:28,049 - services.fixed_events_service - INFO - 成功加载 13 个固定事件
+2025-06-08 14:17:28,049 - services.fixed_events_service - INFO - 固定事件服务初始化完成
+2025-06-08 14:17:28,049 - services.game_action_service - INFO - 游戏行动处理服务初始化完成
+2025-06-08 14:17:28,049 - services.game_action_service - INFO - 开始处理玩家行动: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,049 - services.game_action_service - DEBUG - 玩家行动长度: 30 字符
+2025-06-08 14:17:28,049 - services.game_action_service - DEBUG - 玩家行动内容: 我想去村庄中心广场看看，了解一下当前的情况，并与村民们交谈。
+2025-06-08 14:17:28,049 - services.game_action_service - DEBUG - 获取当前游戏状态
+2025-06-08 14:17:28,049 - services.game_data_service - DEBUG - 开始获取游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,049 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:17:28,049 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,049 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:17:28,050 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,050 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:17:28,050 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:17:28,050 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:17:28,050 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,050 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,050 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,050 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:17:28,050 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:17:28,050 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:17:28.050104
+2025-06-08 14:17:28,050 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:17:28,050 - services.game_data_service - DEBUG - 游戏状态获取成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,050 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:17:28,050 - services.game_data_service - DEBUG - 当前天数: 1
+2025-06-08 14:17:28,050 - services.game_action_service - DEBUG - 游戏状态获取成功，当前第1天
+2025-06-08 14:17:28,051 - services.game_action_service - DEBUG - 玩家姓名: 测试勇者
+2025-06-08 14:17:28,051 - services.game_action_service - DEBUG - 检查游戏是否已完成
+2025-06-08 14:17:28,051 - services.game_data_service - DEBUG - 开始获取游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,051 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:17:28,051 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,051 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:17:28,051 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,051 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:17:28,051 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:17:28,051 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:17:28,052 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:17:28,052 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,052 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,052 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:17:28,052 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:17:28,052 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:17:28.051550
+2025-06-08 14:17:28,052 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:17:28,052 - services.game_data_service - DEBUG - 游戏状态获取成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:17:28,052 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:17:28,052 - services.game_data_service - DEBUG - 当前天数: 1
+2025-06-08 14:17:28,052 - services.game_action_service - DEBUG - 加载系统提示
+2025-06-08 14:17:28,052 - services.game_action_service - DEBUG - 系统提示长度: 3197 字符
+2025-06-08 14:17:28,052 - services.game_action_service - DEBUG - 构建用户提示
+2025-06-08 14:17:28,052 - services.game_action_service - DEBUG - 开始构建用户提示
+2025-06-08 14:17:28,052 - services.game_action_service - DEBUG - 模板路径: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/game_action_user_prompt.txt
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 模板加载成功，长度: 683 字符
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 玩家数据键: ['name', 'stats', 'inventory', 'equipment']
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 世界数据键: ['weather', 'current_location', 'current_time']
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - NPC数量: 1
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 格式化装备信息
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 装备信息: 无装备
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 格式化NPC信息
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - NPC信息长度: 16 字符
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 格式化世界信息
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 世界信息长度: 22 字符
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 格式化历史事件
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 历史事件数量: 0
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 格式化固定事件
+2025-06-08 14:17:28,053 - services.fixed_events_service - DEBUG - 第1天有 2 个固定事件
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 当前天数固定事件: 125 字符
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 填充模板参数
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 用户提示构建完成，最终长度: 630 字符
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 用户提示长度: 630 字符
+2025-06-08 14:17:28,053 - services.game_action_service - INFO - 调用LLM进行游戏推演
+2025-06-08 14:17:28,053 - services.game_action_service - DEBUG - 发送LLM请求...
+2025-06-08 14:17:28,053 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-08 14:17:28,053 - llm.chat - INFO - 开始发送LLM请求，超时时间: 60秒
+2025-06-08 14:18:03,706 - llm.chat - INFO - LLM请求完成，耗时: 35.65秒
+2025-06-08 14:18:03,707 - llm.chat - INFO - 成功获取 API 响应
+2025-06-08 14:18:03,707 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "```json\n{\n  \"player_actions\": {\n    \"morning\": \"前往村庄中心广场，观察周围情况，与早起的村民交谈\",\n    \"afternoon\": \"继...
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - LLM响应接收完成
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - LLM响应类型: <class 'dict'>
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - 解析LLM响应
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - 开始解析LLM响应
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - 提取LLM响应内容
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - 响应选择数量: 1
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - LLM原始响应长度: 2893 字符
+2025-06-08 14:18:03,707 - services.game_action_service - DEBUG - LLM原始响应前500字符: ```json
+{
+  "player_actions": {
+    "morning": "前往村庄中心广场，观察周围情况，与早起的村民交谈",
+    "afternoon": "继续在广场与更多村民交流，了解村庄的更多信息", 
+    "evening": "在广场与村民们一起享受篝火，与老村长交流"
+  },
+  "npc_actions": {
+    "村长": {
+      "morning": "在村长家处理一些村庄事务，随后前往广场查看情况",
+      "afternoon": "在广场与村民交流，安排一些工作",
+      "evening": "在村口点燃篝火，在广场与大家一起享受夜晚"
+    }
+  },
+  "time_progression": {
+    "morning": {
+      "narrative": "清晨，村庄的钟声准时响起，新的一天开始了。空气中弥漫着新鲜面包的香味，村民们开始了他们的日常工作。测试勇者来到了村庄中心广场，这里人来人往，热闹非凡。勇者与几位早起的村民交谈，了解到村庄近期还算太平，但偶尔会有一些小麻烦，比如...
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 尝试提取JSON内容
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 找到JSON代码块
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 待解析JSON长度: 2881 字符
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 待解析JSON前200字符: {
+  "player_actions": {
+    "morning": "前往村庄中心广场，观察周围情况，与早起的村民交谈",
+    "afternoon": "继续在广场与更多村民交流，了解村庄的更多信息", 
+    "evening": "在广场与村民们一起享受篝火，与老村长交流"
+  },
+  "npc_actions": {
+    "村长": {
+      "morning"...
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 开始JSON解析
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - LLM响应解析成功
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 解析结果顶级键: ['player_actions', 'npc_actions', 'time_progression', 'day_summary', 'updated_states']
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 验证时间推演格式
+2025-06-08 14:18:03,708 - services.game_action_service - DEBUG - 时间推演格式验证完成
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - LLM响应解析成功
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 解析结果键: ['player_actions', 'npc_actions', 'time_progression', 'day_summary', 'updated_states']
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 应用状态变化
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 开始应用状态变化
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 更新状态键: ['player', 'world', 'npcs']
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 处理玩家状态更新
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 当前玩家HP: 100
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 更新后玩家HP: 100
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 玩家状态合并完成
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 处理世界状态更新
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 当前天气: 晴天
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 更新后天气: 晴天
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 世界状态合并完成
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 处理NPC状态更新
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 当前NPC数量: 1
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 更新的NPC数量: 1
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - NPC状态合并完成
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 添加历史记录
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 添加历史记录: 第1天: 在这一天里，测试勇者在村庄中心广场与村民们进行了广泛的交流。了解到村庄的日常情况和一些历史传说，还得知村外森林有神秘宝藏和怪物。晚上与老村长交流后，获得了老村长的鼓励。...
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 历史记录总数: 1
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 调用游戏数据服务应用状态更新
+2025-06-08 14:18:03,709 - services.game_action_service - DEBUG - 状态更新键: ['player', 'world', 'npc', 'history']
+2025-06-08 14:18:03,709 - services.game_data_service - DEBUG - 开始更新游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,709 - services.game_data_service - DEBUG - 状态更新键: ['player', 'world', 'npc', 'history']
+2025-06-08 14:18:03,709 - services.game_data_service - DEBUG - 获取当前游戏数据
+2025-06-08 14:18:03,709 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,709 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,710 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,710 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:18:03,710 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,710 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,710 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,710 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,711 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,712 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:18:03.710683
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 当前游戏数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 当前状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 开始合并状态更新
+2025-06-08 14:18:03,712 - utils.json_utils - DEBUG - 游戏状态合并成功
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 状态合并完成，更新后状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 游戏数据中的状态已更新
+2025-06-08 14:18:03,712 - services.game_data_service - DEBUG - 保存更新后的游戏数据
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,712 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,713 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,713 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,713 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,713 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups/2025-06-08
+2025-06-08 14:18:03,713 - utils.file_utils - DEBUG - 文件备份成功: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json -> backend/data/backups/2025-06-08/141803_game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,713 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,713 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,718 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,721 - services.file_storage_service - DEBUG - 游戏文件保存成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,722 - services.session_service - DEBUG - 游戏会话数据更新成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,724 - services.game_data_service - DEBUG - 游戏状态更新成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,724 - services.game_data_service - DEBUG - 更新后天数: 1
+2025-06-08 14:18:03,724 - services.game_action_service - DEBUG - 状态变化应用成功
+2025-06-08 14:18:03,725 - services.game_action_service - DEBUG - 状态变化应用成功
+2025-06-08 14:18:03,725 - services.game_action_service - DEBUG - 推进游戏天数，从第1天到第2天
+2025-06-08 14:18:03,726 - services.game_data_service - DEBUG - 开始获取游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,726 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-08 14:18:03,729 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,731 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,731 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:18:03,733 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,733 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,735 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,735 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,737 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,737 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,737 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,737 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,737 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:18:03,737 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:18:03.734992
+2025-06-08 14:18:03,737 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,737 - services.game_data_service - DEBUG - 游戏状态获取成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,737 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,737 - services.game_data_service - DEBUG - 当前天数: 1
+2025-06-08 14:18:03,738 - services.game_data_service - DEBUG - 开始更新游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,738 - services.game_data_service - DEBUG - 状态更新键: ['day']
+2025-06-08 14:18:03,738 - services.game_data_service - DEBUG - 获取当前游戏数据
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,738 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,738 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:18:03,738 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,738 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,738 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,738 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,739 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,739 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,739 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,739 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,739 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:18:03,739 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:18:03.738907
+2025-06-08 14:18:03,739 - services.game_data_service - DEBUG - 当前游戏数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,739 - services.game_data_service - DEBUG - 当前状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,739 - services.game_data_service - DEBUG - 开始合并状态更新
+2025-06-08 14:18:03,739 - utils.json_utils - DEBUG - 游戏状态合并成功
+2025-06-08 14:18:03,740 - services.game_data_service - DEBUG - 状态合并完成，更新后状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,740 - services.game_data_service - DEBUG - 游戏数据中的状态已更新
+2025-06-08 14:18:03,740 - services.game_data_service - DEBUG - 保存更新后的游戏数据
+2025-06-08 14:18:03,740 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,740 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,740 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,740 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,740 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,740 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,740 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,740 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/backups/2025-06-08
+2025-06-08 14:18:03,740 - utils.file_utils - DEBUG - 文件备份成功: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json -> backend/data/backups/2025-06-08/141803_game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,740 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,741 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,741 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,741 - services.file_storage_service - DEBUG - 游戏文件保存成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,741 - services.session_service - DEBUG - 游戏会话数据更新成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,741 - services.game_data_service - DEBUG - 游戏状态更新成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,741 - services.game_data_service - DEBUG - 更新后天数: 2
+2025-06-08 14:18:03,741 - services.game_data_service - INFO - 游戏天数推进成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa, 第2天
+2025-06-08 14:18:03,741 - services.game_action_service - DEBUG - 天数推进结果: True
+2025-06-08 14:18:03,741 - services.game_action_service - INFO - 玩家行动处理完成: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,742 - services.game_data_service - DEBUG - 开始获取游戏状态: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,742 - services.game_data_service - DEBUG - 调用会话服务获取会话数据
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 获取游戏会话数据: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 验证会话有效性
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 验证游戏会话: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 验证游戏ID格式
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 游戏ID格式验证通过
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 检查游戏文件是否存在
+2025-06-08 14:18:03,742 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 游戏会话验证成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,742 - services.session_service - DEBUG - 会话验证通过，加载游戏文件
+2025-06-08 14:18:03,742 - utils.file_utils - DEBUG - 成功读取文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,742 - utils.json_utils - DEBUG - 游戏数据结构验证通过
+2025-06-08 14:18:03,742 - utils.json_utils - DEBUG - 游戏元数据更新成功
+2025-06-08 14:18:03,742 - utils.file_utils - DEBUG - 目录已确保存在: backend/data/games
+2025-06-08 14:18:03,744 - utils.file_utils - DEBUG - 成功原子性写入文件: backend/data/games/game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa.json
+2025-06-08 14:18:03,744 - services.file_storage_service - DEBUG - 游戏文件加载成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,744 - services.session_service - DEBUG - 获取游戏会话数据成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,744 - services.session_service - DEBUG - 数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,744 - services.session_service - DEBUG - 会话创建时间: 2025-06-08T14:17:28.042864
+2025-06-08 14:18:03,744 - services.session_service - DEBUG - 最后访问时间: 2025-06-08 14:18:03.742764
+2025-06-08 14:18:03,744 - services.game_data_service - DEBUG - 会话数据获取成功，数据键: ['metadata', 'game_state']
+2025-06-08 14:18:03,744 - services.game_data_service - DEBUG - 游戏状态获取成功: game_b8cff06b-9df3-4ccf-a90c-6395d09d96aa
+2025-06-08 14:18:03,744 - services.game_data_service - DEBUG - 游戏状态键: ['day', 'player', 'world', 'npc', 'events', 'history', 'created_at', 'last_action']
+2025-06-08 14:18:03,744 - services.game_data_service - DEBUG - 当前天数: 2

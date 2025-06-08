@@ -1,83 +1,83 @@
 <template>
   <div class="hero-status">
     <h2 class="status-title">勇者状态</h2>
-    
+
     <div class="status-section">
       <h3>基本信息</h3>
       <div class="status-grid">
         <div class="status-item">
           <span class="label">姓名:</span>
-          <span class="value">{{ hero.name || '未知' }}</span>
+          <span class="value">{{ getBasicInfo('name') || '未知' }}</span>
         </div>
         <div class="status-item">
           <span class="label">性别:</span>
-          <span class="value">{{ hero.gender || '未知' }}</span>
+          <span class="value">{{ getBasicInfo('gender') || '未知' }}</span>
         </div>
         <div class="status-item">
           <span class="label">职业:</span>
-          <span class="value">{{ hero.profession || '未知' }}</span>
+          <span class="value">{{ getBasicInfo('profession') || '未知' }}</span>
         </div>
         <div class="status-item">
           <span class="label">年龄:</span>
-          <span class="value">{{ hero.age || '未知' }}</span>
+          <span class="value">{{ getBasicInfo('age') || '未知' }}</span>
         </div>
       </div>
     </div>
-    
+
     <div class="status-section">
       <h3>状态</h3>
       <div class="status-bars">
         <div class="status-bar">
           <span class="label">生命值:</span>
           <div class="bar-container">
-            <div class="bar hp" :style="{ width: `${hero.hp}%` }"></div>
-            <span class="bar-text">{{ hero.hp }}/100</span>
+            <div class="bar hp" :style="{ width: `${getStat('hp')}%` }"></div>
+            <span class="bar-text">{{ getStat('hp') }}/100</span>
           </div>
         </div>
         <div class="status-bar">
           <span class="label">魔法值:</span>
           <div class="bar-container">
-            <div class="bar mp" :style="{ width: `${hero.mp}%` }"></div>
-            <span class="bar-text">{{ hero.mp }}/100</span>
+            <div class="bar mp" :style="{ width: `${getStat('mp')}%` }"></div>
+            <span class="bar-text">{{ getStat('mp') }}/100</span>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="status-section" v-if="hero.isStatsSet">
+
+    <div class="status-section" v-if="isStatsSet">
       <h3>能力值</h3>
       <div class="status-grid">
         <div class="status-item">
           <span class="label">力量:</span>
-          <span class="value">{{ hero.strength }}</span>
+          <span class="value">{{ getStat('strength') }}</span>
           <div class="stat-bar">
-            <div class="stat-fill" :style="{ width: `${hero.strength}%` }"></div>
+            <div class="stat-fill" :style="{ width: `${getStat('strength')}%` }"></div>
           </div>
         </div>
         <div class="status-item">
           <span class="label">智力:</span>
-          <span class="value">{{ hero.intelligence }}</span>
+          <span class="value">{{ getStat('intelligence') }}</span>
           <div class="stat-bar">
-            <div class="stat-fill" :style="{ width: `${hero.intelligence}%` }"></div>
+            <div class="stat-fill" :style="{ width: `${getStat('intelligence')}%` }"></div>
           </div>
         </div>
         <div class="status-item">
           <span class="label">敏捷:</span>
-          <span class="value">{{ hero.agility }}</span>
+          <span class="value">{{ getStat('agility') }}</span>
           <div class="stat-bar">
-            <div class="stat-fill" :style="{ width: `${hero.agility}%` }"></div>
+            <div class="stat-fill" :style="{ width: `${getStat('agility')}%` }"></div>
           </div>
         </div>
         <div class="status-item">
           <span class="label">幸运:</span>
-          <span class="value">{{ hero.luck }}</span>
+          <span class="value">{{ getStat('luck') }}</span>
           <div class="stat-bar">
-            <div class="stat-fill" :style="{ width: `${hero.luck}%` }"></div>
+            <div class="stat-fill" :style="{ width: `${getStat('luck')}%` }"></div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="status-section" v-if="equipmentList.length > 0">
       <h3>装备</h3>
       <ul class="equipment-list">
@@ -96,12 +96,112 @@ import { useHeroStore } from '@/store/heroStore'
 
 export default {
   name: 'HeroStatus',
-  setup() {
+  props: {
+    // 接受从父组件传递的玩家数据
+    playerData: {
+      type: Object,
+      default: () => ({})
+    }
+  },
+  setup(props) {
     const heroStore = useHeroStore()
-    
+
+    // 获取基本信息的方法，支持后端嵌套结构和前端扁平结构
+    const getBasicInfo = (field) => {
+      // 优先使用props传递的数据
+      if (props.playerData && Object.keys(props.playerData).length > 0) {
+        // 尝试从basic_info获取
+        if (props.playerData.basic_info && props.playerData.basic_info[field] !== undefined) {
+          return props.playerData.basic_info[field]
+        }
+        // 尝试直接获取
+        if (props.playerData[field] !== undefined) {
+          return props.playerData[field]
+        }
+      }
+
+      // 回退到heroStore
+      return heroStore[field]
+    }
+
+    // 获取属性值的方法，支持后端嵌套结构和前端扁平结构
+    const getStat = (statName) => {
+      // 优先使用props传递的数据
+      if (props.playerData && Object.keys(props.playerData).length > 0) {
+        // 尝试从stats获取
+        if (props.playerData.stats && props.playerData.stats[statName] !== undefined) {
+          return props.playerData.stats[statName]
+        }
+        // 尝试直接获取
+        if (props.playerData[statName] !== undefined) {
+          return props.playerData[statName]
+        }
+      }
+
+      // 回退到heroStore
+      if (heroStore[statName] !== undefined && heroStore[statName] !== null) {
+        return heroStore[statName]
+      }
+
+      // 返回默认值
+      return getDefaultStatValue(statName)
+    }
+
+    // 获取默认属性值
+    const getDefaultStatValue = (statName) => {
+      switch(statName) {
+        case 'hp':
+        case 'mp':
+          return 100
+        case 'strength':
+        case 'intelligence':
+        case 'agility':
+        case 'luck':
+          return 50
+        default:
+          return 0
+      }
+    }
+
+    // 检查能力值是否已设置
+    const isStatsSet = computed(() => {
+      const strength = getStat('strength')
+      const intelligence = getStat('intelligence')
+      const agility = getStat('agility')
+      const luck = getStat('luck')
+
+      return strength !== null && intelligence !== null &&
+             agility !== null && luck !== null &&
+             strength > 0 && intelligence > 0 &&
+             agility > 0 && luck > 0
+    })
+
     // 获取装备列表
-    const equipmentList = computed(() => heroStore.equipmentList)
-    
+    const equipmentList = computed(() => {
+      // 优先使用props传递的数据
+      if (props.playerData && props.playerData.equipment) {
+        const equipment = props.playerData.equipment
+        const list = []
+
+        for (const [type, item] of Object.entries(equipment)) {
+          if (item) {
+            if (Array.isArray(item)) {
+              item.forEach(i => {
+                if (i) list.push({ type, item: i })
+              })
+            } else {
+              list.push({ type, item })
+            }
+          }
+        }
+
+        return list
+      }
+
+      // 回退到heroStore
+      return heroStore.equipmentList || []
+    })
+
     // 获取装备类型的中文名称
     const getEquipmentTypeName = (type) => {
       const typeMap = {
@@ -115,9 +215,11 @@ export default {
       }
       return typeMap[type] || type
     }
-    
+
     return {
-      hero: heroStore,
+      getBasicInfo,
+      getStat,
+      isStatsSet,
       equipmentList,
       getEquipmentTypeName
     }

@@ -1,0 +1,28 @@
+2025-06-06 23:15:04,117 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-06 23:15:04,117 - llm.story_engine - INFO - 开始剧情推演
+2025-06-06 23:25:55,409 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-06 23:25:55,409 - llm.story_engine - INFO - 开始剧情推演
+2025-06-06 23:25:55,409 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-06 23:25:55,409 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-06 23:25:55,410 - llm.chat - ERROR - 未设置 ARK_API_KEY 环境变量。请在 .env 文件中设置此变量。
+2025-06-06 23:25:55,410 - llm.story_engine - ERROR - 剧情推演失败: 未设置 ARK_API_KEY 环境变量。请在 .env 文件中设置此变量。
+2025-06-06 23:29:40,312 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-06 23:29:40,312 - llm.story_engine - INFO - 开始剧情推演
+2025-06-06 23:29:40,312 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-06 23:29:40,312 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-06 23:30:01,879 - llm.chat - INFO - 成功获取 API 响应
+2025-06-06 23:30:01,879 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<推演结果>\n```json\n{\n  \"narrative_description\": \"勇者走向正在和其他村民讨论最近异象的村长，恭敬地向村长询问关于魔王的传说。村长停下与村民的讨论，看了看勇者，眼中...
+2025-06-06 23:30:01,879 - llm.story_engine - INFO - LLM推演完成，开始解析结果
+2025-06-06 23:30:01,880 - llm.story_engine - INFO - 剧情推演成功完成
+2025-06-06 23:51:24,122 - llm.story_engine - INFO - 成功加载剧情推演提示模板: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/resources/prompts/story_progression_prompt.txt
+2025-06-06 23:51:24,122 - llm.story_engine - INFO - 开始剧情推演
+2025-06-06 23:51:24,122 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-06 23:51:24,122 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-06 23:51:52,057 - llm.chat - INFO - 成功获取 API 响应
+2025-06-06 23:51:52,057 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<推演结果>\n```json\n{\n  \"narrative_description\": \"勇者走向正在和其他村民讨论最近异象的村长，恭敬地询问关于魔王的传说。村长停下与村民的讨论，看着勇者，眼中流露出忧...
+2025-06-06 23:51:52,057 - llm.story_engine - INFO - LLM推演完成，开始解析结果
+2025-06-06 23:51:52,057 - llm.story_engine - INFO - 剧情推演成功完成
+2025-06-07 00:01:02,574 - llm.chat - INFO - 开始创建对话完成，模型: ep-20250219141351-ntqmd
+2025-06-07 00:01:02,574 - llm.chat - WARNING - 系统提示文件不存在: /Users/liujiajun/Documents/projects/games/FiveDaysHero/backend/llm/resources/prompts/system_prompt.txt，使用默认提示
+2025-06-07 00:01:24,387 - llm.chat - INFO - 成功获取 API 响应
+2025-06-07 00:01:24,387 - llm.chat - INFO - 响应内容: {"choices": [{"finish_reason": "stop", "index": 0, "logprobs": null, "message": {"content": "<推演结果></推演结果>\n```json\n{\n  \"narrative_description\": \"勇者走向正在和其他村民讨论最近异象的村长，礼貌地询问关于魔王的传说。村长停下与村民的讨论，转过身来...

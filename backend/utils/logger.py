@@ -27,7 +27,7 @@ LOG_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs')
 if not os.path.exists(LOG_DIR):
     os.makedirs(LOG_DIR)
 
-def get_logger(name, level='info', backup_count=7):
+def get_logger(name, level='debug', backup_count=7):
     """
     获取配置好的日志记录器
     

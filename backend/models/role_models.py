@@ -23,13 +23,19 @@ class World:
         
     def to_dict(self):
         """将世界对象转换为字典"""
-        return {
+        result = {
             "current_day": f"第{self.current_day}天",
             "current_time": self.current_time,
             "weather": self.weather,
             "locations": self.locations,
             "events": self.events
         }
+
+        # 如果有世界描述信息，添加到返回结果中
+        if hasattr(self, 'world_info'):
+            result.update(self.world_info)
+
+        return result
     
     def update_weather(self, new_weather):
         """更新天气状况"""
@@ -167,4 +173,121 @@ class NPC:
     def update_relationship(self, value):
         """更新与勇者的关系值"""
         self.relationship = value
+
+
+class RelationshipGraph:
+    """人物关系图类，用于记录和管理角色之间的关系"""
+
+    def __init__(self):
+        """
+        初始化关系图对象
+        使用有向图结构存储关系，支持A对B和B对A的关系不同
+        """
+        self.relationships = {}  # 存储关系的有向图 {角色A: {角色B: 关系值}}
+
+    def set_relationship(self, character_a, character_b, relationship_value):
+        """
+        设置角色A对角色B的关系
+
+        参数:
+            character_a (str): 角色A的名称
+            character_b (str): 角色B的名称
+            relationship_value (int|str): 关系值，可以是数值(如好感度)或字符串描述
+        """
+        if character_a not in self.relationships:
+            self.relationships[character_a] = {}
+
+        self.relationships[character_a][character_b] = relationship_value
+
+    def get_relationship(self, character_a, character_b):
+        """
+        获取角色A对角色B的关系
+
+        参数:
+            character_a (str): 角色A的名称
+            character_b (str): 角色B的名称
+
+        返回:
+            int|str|None: 关系值，如果没有设置关系则返回None
+        """
+        if character_a in self.relationships:
+            return self.relationships[character_a].get(character_b, None)
+        return None
+
+    def get_all_relationships_for_character(self, character):
+        """
+        获取某个角色对所有其他角色的关系
+
+        参数:
+            character (str): 角色名称
+
+        返回:
+            dict: {角色名: 关系值} 的字典，如果角色不存在则返回空字典
+        """
+        return self.relationships.get(character, {}).copy()
+
+    def get_mutual_relationship(self, character_a, character_b):
+        """
+        获取两个角色之间的双向关系
+
+        参数:
+            character_a (str): 角色A的名称
+            character_b (str): 角色B的名称
+
+        返回:
+            dict: {"a_to_b": 关系值, "b_to_a": 关系值}
+        """
+        return {
+            "a_to_b": self.get_relationship(character_a, character_b),
+            "b_to_a": self.get_relationship(character_b, character_a)
+        }
+
+    def remove_relationship(self, character_a, character_b):
+        """
+        移除角色A对角色B的关系
+
+        参数:
+            character_a (str): 角色A的名称
+            character_b (str): 角色B的名称
+        """
+        if character_a in self.relationships and character_b in self.relationships[character_a]:
+            del self.relationships[character_a][character_b]
+
+            # 如果角色A没有其他关系了，移除该角色的条目
+            if not self.relationships[character_a]:
+                del self.relationships[character_a]
+
+    def get_all_characters(self):
+        """
+        获取关系图中涉及的所有角色名称
+
+        返回:
+            set: 所有角色名称的集合
+        """
+        characters = set(self.relationships.keys())
+        for relations in self.relationships.values():
+            characters.update(relations.keys())
+        return characters
+
+    def to_dict(self):
+        """将关系图对象转换为字典"""
+        return {
+            "relationships": self.relationships.copy()
+        }
+
+    def from_dict(self, data):
+        """从字典数据恢复关系图对象"""
+        if "relationships" in data:
+            self.relationships = data["relationships"].copy()
+
+    def __str__(self):
+        """返回关系图的字符串表示"""
+        if not self.relationships:
+            return "关系图为空"
+
+        result = "人物关系图:\n"
+        for character_a, relations in self.relationships.items():
+            for character_b, relationship in relations.items():
+                result += f"  {character_a} -> {character_b}: {relationship}\n"
+        return result
         

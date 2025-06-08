@@ -1,36 +1,42 @@
 <template>
-  <div class="overlay" v-if="visible">
+  <div class="overlay">
     <div class="prologue-container">
       <h2 class="prologue-title">五日勇者</h2>
-      
+
       <div class="prologue-text" v-if="prologue">
         <p v-for="(line, index) in prologueLines" :key="index" :style="{ animationDelay: index * 0.3 + 's' }">{{ line }}</p>
       </div>
       <div class="loading" v-else>正在加载开场白<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></div>
-      
+
       <div class="player-input-container" v-if="!isSubmitting">
-        <div class="input-label">请描述勇者：</div>
-        <textarea 
-          v-model="playerInput" 
-          placeholder="请输入勇者信息..." 
-          maxlength="100"
+        <div class="input-label">请描述您的勇者：</div>
+        <textarea
+          v-model="playerInput"
+          placeholder="例如：我是一个勇敢的战士，手持长剑，身穿皮甲..."
+          maxlength="200"
           :disabled="!prologue"
           @keyup.enter="canSubmit && submitResponse()"
         ></textarea>
         <div class="input-footer">
-          <div class="char-counter" :class="{ 'char-limit': playerInput.length >= 90 }">
-            {{ playerInput.length }}/100
+          <div class="char-counter" :class="{ 'char-limit': playerInput.length >= 180 }">
+            {{ playerInput.length }}/200
           </div>
-          <button 
-            class="submit-button" 
-            @click="submitResponse" 
+          <button
+            class="submit-button"
+            @click="submitResponse"
             :disabled="!canSubmit || !prologue"
           >开始冒险</button>
         </div>
       </div>
-      
+
       <div class="creating-world" v-if="isSubmitting">
         <div class="loading-text">正在创建世界<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill" :style="{ width: progressWidth }"></div>
+          </div>
+          <div class="progress-text">{{ progressText }}</div>
+        </div>
       </div>
     </div>
   </div>
@@ -44,19 +50,16 @@ import { useHeroStore } from '@/store/heroStore'
 
 export default {
   name: 'PrologueView',
-  props: {
-    visible: {
-      type: Boolean,
-      default: false
-    }
-  },
   emits: ['completed'],
+  expose: ['completeProgress'],
   setup(props, { emit }) {
     const router = useRouter()
     const heroStore = useHeroStore()
     const prologue = ref(null)
     const playerInput = ref('')
     const isSubmitting = ref(false)
+    const progressWidth = ref('0%')
+    const progressText = ref('正在分析勇者信息...')
     
     // 计算属性：将开场白文本分割成行
     const prologueLines = computed(() => {
@@ -95,120 +98,53 @@ export default {
     }
     
     // 提交玩家回应
-    const submitResponse = async () => {
+    const submitResponse = () => {
       if (!canSubmit.value) return
-      
+
       // 设置提交状态为true，显示"正在创建世界"提示
       isSubmitting.value = true
-      
-      try {
-        // 使用新的createWorld接口，一次性创建世界和勇者信息
-        console.log('提交玩家回应并创建世界:', playerInput.value)
-        const response = await gameApi.createWorld(playerInput.value)
-        console.log('世界创建成功:', response.data)
-        
-        if (response.data && response.data.status === 'success') {
-          const heroData = response.data.hero
-          const worldInfo = response.data.world
-          
-          // 设置勇者基本信息
-          heroStore.setBasicInfo({
-            name: heroData.basic_info.name,
-            gender: heroData.basic_info.gender,
-            profession: heroData.basic_info.profession,
-            age: heroData.basic_info.age
-          })
-          
-          // 设置勇者能力值
-          heroStore.setStats({
-            strength: heroData.stats.strength,
-            intelligence: heroData.stats.intelligence,
-            agility: heroData.stats.agility,
-            luck: heroData.stats.luck
-          })
-          
-          // 设置勇者生命值和魔法值
-          heroStore.updateStatus({
-            hp: heroData.stats.hp,
-            mp: heroData.stats.mp
-          })
-          
-          // 设置勇者装备
-          const equipment = heroData.equipment
-          
-          // 添加头部装备
-          if (equipment.head) {
-            heroStore.addEquipment('head', equipment.head)
-          }
-          
-          // 添加胸部装备
-          if (equipment.chest) {
-            heroStore.addEquipment('chest', equipment.chest)
-          }
-          
-          // 添加腿部装备
-          if (equipment.legs) {
-            heroStore.addEquipment('legs', equipment.legs)
-          }
-          
-          // 添加手部装备
-          equipment.hands.forEach(item => {
-            heroStore.addEquipment('hands', item)
-          })
-          
-          // 添加脚部装备
-          if (equipment.feet) {
-            heroStore.addEquipment('feet', equipment.feet)
-          }
-          
-          // 添加脖子装备
-          if (equipment.neck) {
-            heroStore.addEquipment('neck', equipment.neck)
-          }
-          
-          // 添加手腕装备
-          equipment.wrists.forEach(item => {
-            heroStore.addEquipment('wrists', item)
-          })
-          
-          console.log('勇者信息已保存到store:', heroStore.$state)
-          console.log('世界信息已生成:', worldInfo)
-          
-          // 保存世界信息到游戏状态（如果有相应的store）
-          // TODO: 如果需要，添加世界信息的store
-        }
-        
-        // 提交成功后通知父组件
-        emit('completed', playerInput.value)
-      } catch (error) {
-        console.error('提交回应失败:', error)
-        
-        // 如果后端接口不可用，使用前端提取的信息
-        console.log('使用前端提取的勇者信息')
-        const extractedInfo = heroStore.extractHeroInfo(playerInput.value)
-        console.log('前端提取到的勇者信息:', extractedInfo)
-        
-        // 通知父组件
-        emit('completed', playerInput.value)
-      } finally {
-        // 无论成功或失败，最终都会由父组件处理，这里不需要重置isSubmitting
-        // 因为组件会被隐藏或销毁
-      }
+
+      // 模拟进度条
+      simulateProgress()
+
+      // 直接通知父组件，由父组件处理世界创建
+      emit('completed', playerInput.value)
     }
-    
-    // 监听 visible 属性变化，当变为 true 时加载开场白
+
+    // 模拟进度条
+    const simulateProgress = () => {
+      const steps = [
+        { progress: '15%', text: '正在分析勇者信息...' },
+        { progress: '30%', text: '正在生成世界背景...' },
+        { progress: '50%', text: '正在创建NPC角色...' },
+        { progress: '70%', text: '正在初始化游戏状态...' },
+        { progress: '85%', text: '正在保存游戏数据...' },
+        { progress: '95%', text: '即将完成...' }
+      ]
+
+      let currentStep = 0
+      const interval = setInterval(() => {
+        if (currentStep < steps.length) {
+          progressWidth.value = steps[currentStep].progress
+          progressText.value = steps[currentStep].text
+          currentStep++
+        } else {
+          // 不要自动到100%，让实际API完成时再处理
+          clearInterval(interval)
+        }
+      }, 3000) // 每3秒更新一次，总共约18秒，给API留足时间
+    }
+
+    // 完成进度条（由父组件调用）
+    const completeProgress = () => {
+      progressWidth.value = '100%'
+      progressText.value = '世界创建完成！'
+    }
+
+    // 组件挂载时加载开场白
     onMounted(() => {
-      console.log('PrologueView组件已挂载, visible:', props.visible)
+      console.log('PrologueView组件已挂载')
       fetchPrologue()
-    })
-    
-    // 监听visible属性变化
-    watch(() => props.visible, (newValue) => {
-      console.log('visible属性变化:', newValue)
-      if (newValue && !prologue.value) {
-        console.log('visible变为true且prologue为空，重新获取开场白')
-        fetchPrologue()
-      }
     })
     
     return {
@@ -217,7 +153,10 @@ export default {
       playerInput,
       canSubmit,
       isSubmitting,
+      progressWidth,
+      progressText,
       submitResponse,
+      completeProgress,
       heroStore
     }
   }
@@ -339,6 +278,35 @@ export default {
   margin: 3rem 0;
   color: #ffcc00;
   text-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+.progress-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffcc00, #ff6b6b);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.8;
 }
 
 @keyframes dotFade {

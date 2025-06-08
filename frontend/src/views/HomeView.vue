@@ -12,31 +12,10 @@
     </div>
     
     <!-- 开场白组件 -->
-    <prologue-view 
-      :visible="showPrologue" 
+    <prologue-view
+      ref="prologueRef"
+      v-if="showPrologue"
       @completed="onPrologueCompleted"
-    />
-    
-    <!-- 每日进程组件 -->
-    <day1-view 
-      :visible="currentDay === 1" 
-      @completed="onDayCompleted"
-    />
-    <day2-view 
-      :visible="currentDay === 2" 
-      @completed="onDayCompleted"
-    />
-    <day3-view 
-      :visible="currentDay === 3" 
-      @completed="onDayCompleted"
-    />
-    <day4-view 
-      :visible="currentDay === 4" 
-      @completed="onDayCompleted"
-    />
-    <day5-view 
-      :visible="currentDay === 5" 
-      @completed="onDayCompleted"
     />
   </div>
 </template>
@@ -46,7 +25,6 @@ import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import * as PIXI from 'pixi.js'
 import PrologueView from './prologue/PrologueView.vue'
-import { Day1View, Day2View, Day3View, Day4View, Day5View } from './days'
 import gameApi from '@/api/gameApi'
 import HeroStatus from '@/components/HeroStatus.vue'
 import { useHeroStore } from '@/store/heroStore'
@@ -55,17 +33,13 @@ export default {
   name: 'HomeView',
   components: {
     PrologueView,
-    Day1View,
-    Day2View,
-    Day3View,
-    Day4View,
-    Day5View,
     HeroStatus
   },
   setup() {
     const router = useRouter()
     const heroStore = useHeroStore()
     const pixiContainer = ref(null)
+    const prologueRef = ref(null)
     const gameStarted = ref(false)
     const showPrologue = ref(false)
     const currentDay = ref(0)
@@ -88,42 +62,44 @@ export default {
     }
     
     // 开场白完成后的回调
-    const onPrologueCompleted = (playerResponse) => {
+    const onPrologueCompleted = async (playerResponse) => {
       console.log('开场白完成，玩家回应:', playerResponse)
-      showPrologue.value = false
-      console.log('showPrologue设置为', showPrologue.value)
-      currentDay.value = 1 // 进入第一天
-      console.log('当前天数设置为', currentDay.value)
-      
-      // 设置勇者初始能力值（随机生成）
-      if (!heroStore.isStatsSet) {
-        const stats = {
-          strength: Math.floor(Math.random() * 30) + 40, // 40-70
-          intelligence: Math.floor(Math.random() * 30) + 40, // 40-70
-          agility: Math.floor(Math.random() * 30) + 40, // 40-70
-          luck: Math.floor(Math.random() * 30) + 40 // 40-70
+      // 不要立即隐藏开场白组件，让它显示"正在创建世界"的提示
+
+      try {
+        // 调用后端创建世界接口
+        const response = await gameApi.createWorld(playerResponse)
+
+        if (response.data.status === 'success') {
+          const gameId = response.data.game_id
+          console.log('游戏创建成功，游戏ID:', gameId)
+
+          // 完成进度条
+          if (prologueRef.value && prologueRef.value.completeProgress) {
+            prologueRef.value.completeProgress()
+          }
+
+          // 等待一下让用户看到完成状态，然后隐藏开场白组件
+          setTimeout(() => {
+            showPrologue.value = false
+            // 跳转到主游戏界面
+            router.push(`/game/${gameId}`)
+          }, 1000)
+        } else {
+          console.error('游戏创建失败:', response.data.message)
+          // 隐藏开场白组件
+          showPrologue.value = false
+          alert('游戏创建失败，请重试')
         }
-        heroStore.setStats(stats)
-        console.log('设置勇者初始能力值:', stats)
+      } catch (error) {
+        console.error('创建游戏世界失败:', error)
+        // 隐藏开场白组件
+        showPrologue.value = false
+        alert('网络错误，请检查连接后重试')
       }
     }
     
-    // 每天完成后的回调
-    const onDayCompleted = (data) => {
-      console.log(`第${data.day}天完成，选择:`, data.choice)
-      
-      // 记录玩家选择
-      heroStore.recordChoice(data.day, data.choice)
-      console.log('勇者当前状态:', heroStore.$state)
-      
-      if (data.day < 5) {
-        // 进入下一天
-        currentDay.value = data.day + 1
-      } else {
-        // 游戏结束，跳转到结果页面
-        router.push('/game')
-      }
-    }
+
     
     onMounted(() => {
       if (pixiContainer.value) {
@@ -217,12 +193,12 @@ export default {
     
     return {
       pixiContainer,
+      prologueRef,
       startGame,
       gameStarted,
       showPrologue,
       currentDay,
       onPrologueCompleted,
-      onDayCompleted,
       heroStore
     }
   }

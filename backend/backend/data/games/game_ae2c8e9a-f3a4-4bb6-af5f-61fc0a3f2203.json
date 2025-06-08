@@ -1,0 +1,559 @@
+{
+  "metadata": {
+    "game_id": "game_ae2c8e9a-f3a4-4bb6-af5f-61fc0a3f2203",
+    "created_at": "2025-06-08T18:26:41.906770",
+    "last_accessed": "2025-06-08T22:56:54.034707",
+    "expires_at": "2025-06-15T18:26:41.906770",
+    "updated_at": "2025-06-08T22:56:54.034707",
+    "version": "1.0",
+    "data_format": "json"
+  },
+  "game_state": {
+    "day": 1,
+    "player": {
+      "basic_info": {
+        "name": "无名勇者",
+        "gender": "未知",
+        "profession": "魔法师",
+        "age": 23,
+        "personality": ""
+      },
+      "stats": {
+        "hp": 100,
+        "mp": 100,
+        "strength": 50,
+        "intelligence": 82,
+        "agility": 50,
+        "luck": 50
+      },
+      "equipment": {
+        "hands": [
+          "剑"
+        ]
+      },
+      "inventory": [],
+      "events": []
+    },
+    "world": {
+      "current_day": "第1天",
+      "current_time": "evening",
+      "weather": "雨天",
+      "locations": {
+        "church": {
+          "name": "神圣教堂",
+          "description": "分为五层，地下一层，是遗迹，存放神圣遗宝，一层大堂，二层图书馆，三层访客居住的地方，四层神父和修女居住的地方",
+          "type": "religious",
+          "safety_level": "safe",
+          "available_services": [
+            "祈祷",
+            "图书阅览",
+            "住宿"
+          ],
+          "notable_npcs": [
+            "神父",
+            "修女"
+          ]
+        },
+        "house": {
+          "name": "村长家",
+          "description": "村长家，是村长办公的地方",
+          "type": "residence",
+          "safety_level": "safe",
+          "available_services": [
+            "政务咨询"
+          ],
+          "notable_npcs": [
+            "村长"
+          ]
+        },
+        "square": {
+          "name": "广场",
+          "description": "村庄中心，村民日常活动的地方，附近有商铺、铁匠铺，旅馆",
+          "type": "public",
+          "safety_level": "safe",
+          "available_services": [
+            "集会",
+            "交流"
+          ],
+          "notable_npcs": [
+            "村民"
+          ]
+        },
+        "shop": {
+          "name": "商铺",
+          "description": "售卖各种生活用品，食物，药材",
+          "type": "commercial",
+          "safety_level": "safe",
+          "available_services": [
+            "购买物品",
+            "出售物品"
+          ],
+          "notable_npcs": [
+            "商人"
+          ]
+        },
+        "blacksmith": {
+          "name": "铁匠铺",
+          "description": "售卖各种武器，盔甲，工具",
+          "type": "commercial",
+          "safety_level": "safe",
+          "available_services": [
+            "购买装备",
+            "修理装备",
+            "锻造装备"
+          ],
+          "notable_npcs": [
+            "铁匠"
+          ]
+        },
+        "inn": {
+          "name": "旅馆",
+          "description": "旅客住宿的地方，也是勇者居住的地方。旅馆一层兼有酒吧",
+          "type": "accommodation",
+          "safety_level": "safe",
+          "available_services": [
+            "住宿",
+            "用餐",
+            "饮酒",
+            "休息"
+          ],
+          "notable_npcs": [
+            "旅馆老板",
+            "酒保"
+          ]
+        },
+        "garrison": {
+          "name": "城外军营",
+          "description": "国王的军队驻扎的地方",
+          "type": "military",
+          "safety_level": "safe",
+          "available_services": [
+            "军事训练",
+            "情报收集"
+          ],
+          "notable_npcs": [
+            "队长",
+            "士兵"
+          ]
+        },
+        "forest": {
+          "name": "森林",
+          "description": "村庄附近的森林，是魔王手下出没的地方。可以获取常见药材和食物",
+          "type": "wilderness",
+          "safety_level": "dangerous",
+          "available_services": [
+            "采集",
+            "狩猎",
+            "探索"
+          ],
+          "notable_npcs": []
+        },
+        "mountain": {
+          "name": "山",
+          "description": "村庄附近的山，靠近魔王领地，传说有神秘生物出没，无法预计打扰到的后果。可以获取珍稀药材和食物",
+          "type": "wilderness",
+          "safety_level": "very_dangerous",
+          "available_services": [
+            "采集",
+            "探索"
+          ],
+          "notable_npcs": []
+        },
+        "lake": {
+          "name": "湖泊",
+          "description": "村庄附近的湖泊，平时村民休闲的地方，但是由于魔王的预告，现在村民不敢去了。可以获取常见药材和食物",
+          "type": "wilderness",
+          "safety_level": "moderate",
+          "available_services": [
+            "钓鱼",
+            "采集",
+            "休闲"
+          ],
+          "notable_npcs": []
+        }
+      },
+      "events": [],
+      "name": "艾尔德拉村庄",
+      "description": "村庄位于王国边境，和魔王的领地接壤。村庄里有神圣教堂，村长家，广场，商铺，铁匠铺，旅馆",
+      "background": {},
+      "geography": {},
+      "lore": {},
+      "factions": []
+    },
+    "npc": {
+      "king": {
+        "name": "国王",
+        "age": 60,
+        "gender": "男",
+        "profession": "国王",
+        "stats": {
+          "strength": 40,
+          "intelligence": 75,
+          "agility": 30,
+          "luck": 50
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "queen": {
+        "name": "王后",
+        "age": 58,
+        "gender": "女",
+        "profession": "王后",
+        "stats": {
+          "strength": 30,
+          "intelligence": 70,
+          "agility": 40,
+          "luck": 60
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "princess": {
+        "name": "公主",
+        "age": 20,
+        "gender": "女",
+        "profession": "公主",
+        "stats": {
+          "strength": 60,
+          "intelligence": 80,
+          "agility": 60,
+          "luck": 65
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "prince": {
+        "name": "王子",
+        "age": 22,
+        "gender": "男",
+        "profession": "王子",
+        "stats": {
+          "strength": 85,
+          "intelligence": 60,
+          "agility": 55,
+          "luck": 55
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "village_elder": {
+        "name": "村长",
+        "age": 65,
+        "gender": "男",
+        "profession": "村长",
+        "stats": {
+          "strength": 30,
+          "intelligence": 60,
+          "agility": 25,
+          "luck": 45
+        },
+        "relationship": 4,
+        "events": []
+      },
+      "blacksmith": {
+        "name": "铁匠",
+        "age": 45,
+        "gender": "男",
+        "profession": "铁匠",
+        "stats": {
+          "strength": 75,
+          "intelligence": 50,
+          "agility": 40,
+          "luck": 35
+        },
+        "relationship": 3,
+        "events": []
+      },
+      "merchant": {
+        "name": "商人",
+        "age": 40,
+        "gender": "女",
+        "profession": "商人",
+        "stats": {
+          "strength": 30,
+          "intelligence": 60,
+          "agility": 45,
+          "luck": 70
+        },
+        "relationship": 3,
+        "events": []
+      },
+      "mage": {
+        "name": "法师",
+        "age": 50,
+        "gender": "女",
+        "profession": "法师",
+        "stats": {
+          "strength": 20,
+          "intelligence": 85,
+          "agility": 35,
+          "luck": 55
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "knight_captain": {
+        "name": "骑士队长",
+        "age": 35,
+        "gender": "男",
+        "profession": "骑士",
+        "stats": {
+          "strength": 80,
+          "intelligence": 55,
+          "agility": 65,
+          "luck": 40
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "innkeeper": {
+        "name": "旅店老板",
+        "age": 50,
+        "gender": "男",
+        "profession": "旅店老板",
+        "stats": {
+          "strength": 40,
+          "intelligence": 55,
+          "agility": 35,
+          "luck": 60
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "priest": {
+        "name": "神父",
+        "age": 55,
+        "gender": "男",
+        "profession": "神父",
+        "stats": {
+          "strength": 35,
+          "intelligence": 80,
+          "agility": 30,
+          "luck": 75
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "nun": {
+        "name": "修女",
+        "age": 30,
+        "gender": "女",
+        "profession": "修女",
+        "stats": {
+          "strength": 25,
+          "intelligence": 70,
+          "agility": 40,
+          "luck": 65
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "garrison_commander": {
+        "name": "军营指挥官",
+        "age": 42,
+        "gender": "男",
+        "profession": "军官",
+        "stats": {
+          "strength": 85,
+          "intelligence": 65,
+          "agility": 60,
+          "luck": 45
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "soldier": {
+        "name": "士兵",
+        "age": 28,
+        "gender": "男",
+        "profession": "士兵",
+        "stats": {
+          "strength": 65,
+          "intelligence": 40,
+          "agility": 55,
+          "luck": 35
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "bartender": {
+        "name": "酒保",
+        "age": 38,
+        "gender": "女",
+        "profession": "酒保",
+        "stats": {
+          "strength": 45,
+          "intelligence": 60,
+          "agility": 50,
+          "luck": 55
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "pharmacist": {
+        "name": "药师",
+        "age": 45,
+        "gender": "女",
+        "profession": "药师",
+        "stats": {
+          "strength": 30,
+          "intelligence": 75,
+          "agility": 40,
+          "luck": 60
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "scholar": {
+        "name": "学者",
+        "age": 60,
+        "gender": "男",
+        "profession": "学者",
+        "stats": {
+          "strength": 20,
+          "intelligence": 90,
+          "agility": 25,
+          "luck": 70
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "forest_guardian": {
+        "name": "森林守护者",
+        "age": 200,
+        "gender": "男",
+        "profession": "守护者",
+        "stats": {
+          "strength": 70,
+          "intelligence": 85,
+          "agility": 80,
+          "luck": 60
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "hermit_mage": {
+        "name": "隐居法师",
+        "age": 80,
+        "gender": "女",
+        "profession": "法师",
+        "stats": {
+          "strength": 25,
+          "intelligence": 95,
+          "agility": 35,
+          "luck": 80
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "mountain_hermit": {
+        "name": "山中隐士",
+        "age": 70,
+        "gender": "男",
+        "profession": "隐士",
+        "stats": {
+          "strength": 60,
+          "intelligence": 80,
+          "agility": 50,
+          "luck": 75
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "prime_minister": {
+        "name": "宰相",
+        "age": 55,
+        "gender": "男",
+        "profession": "宰相",
+        "stats": {
+          "strength": 30,
+          "intelligence": 85,
+          "agility": 35,
+          "luck": 65
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "royal_mage": {
+        "name": "王室法师",
+        "age": 65,
+        "gender": "女",
+        "profession": "法师",
+        "stats": {
+          "strength": 25,
+          "intelligence": 90,
+          "agility": 40,
+          "luck": 70
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "village_child": {
+        "name": "村庄孩子",
+        "age": 10,
+        "gender": "女",
+        "profession": "村民",
+        "stats": {
+          "strength": 10,
+          "intelligence": 40,
+          "agility": 60,
+          "luck": 80
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "old_villager": {
+        "name": "老村民",
+        "age": 75,
+        "gender": "男",
+        "profession": "村民",
+        "stats": {
+          "strength": 20,
+          "intelligence": 65,
+          "agility": 15,
+          "luck": 50
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "demon_scout": {
+        "name": "魔族斥候",
+        "age": 150,
+        "gender": "男",
+        "profession": "魔族",
+        "stats": {
+          "strength": 70,
+          "intelligence": 60,
+          "agility": 85,
+          "luck": 40
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "traveling_merchant": {
+        "name": "旅行商人",
+        "age": 35,
+        "gender": "男",
+        "profession": "商人",
+        "stats": {
+          "strength": 40,
+          "intelligence": 70,
+          "agility": 60,
+          "luck": 85
+        },
+        "relationship": 0,
+        "events": []
+      },
+      "村民": {
+        "relationship": 5
+      }
+    },
+    "events": [],
+    "history": [
+      "第1天: 玩家在这一天对村庄进行了全面的探索，与众多村民、店主和村长进行了交流。通过交流，玩家对村庄的情况有了更深入的了解，也建立了良好的人际关系。"
+    ],
+    "created_at": "2025-06-08T18:26:41.905905",
+    "last_action": null
+  }
+}

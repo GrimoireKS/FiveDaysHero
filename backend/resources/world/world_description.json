@@ -1,0 +1,104 @@
+{
+  "world_name": "艾尔德拉村庄",
+  "description": "村庄位于王国边境，和魔王的领地接壤。村庄里有神圣教堂，村长家，广场，商铺，铁匠铺，旅馆",
+  "initial_locations": [
+    {
+      "id": "church",
+      "name": "神圣教堂",
+      "description": "分为五层，地下一层，是遗迹，存放神圣遗宝，一层大堂，二层图书馆，三层访客居住的地方，四层神父和修女居住的地方",
+      "type": "religious",
+      "safety_level": "safe",
+      "available_services": ["祈祷", "图书阅览", "住宿"],
+      "notable_npcs": ["神父", "修女"]
+    },
+    {
+      "id": "house",
+      "name": "村长家",
+      "description": "村长家，是村长办公的地方",
+      "type": "residence",
+      "safety_level": "safe",
+      "available_services": ["政务咨询"],
+      "notable_npcs": ["村长"]
+    },
+    {
+      "id": "square",
+      "name": "广场",
+      "description": "村庄中心，村民日常活动的地方，附近有商铺、铁匠铺，旅馆",
+      "type": "public",
+      "safety_level": "safe",
+      "available_services": ["集会", "交流"],
+      "notable_npcs": ["村民"]
+    },
+    {
+      "id": "shop",
+      "name": "商铺",
+      "description": "售卖各种生活用品，食物，药材",
+      "type": "commercial",
+      "safety_level": "safe",
+      "available_services": ["购买物品", "出售物品"],
+      "notable_npcs": ["商人"]
+    },
+    {
+      "id": "blacksmith",
+      "name": "铁匠铺",
+      "description": "售卖各种武器，盔甲，工具",
+      "type": "commercial",
+      "safety_level": "safe",
+      "available_services": ["购买装备", "修理装备", "锻造装备"],
+      "notable_npcs": ["铁匠"]
+    },
+    {
+      "id": "inn",
+      "name": "旅馆",
+      "description": "旅客住宿的地方，也是勇者居住的地方。旅馆一层兼有酒吧",
+      "type": "accommodation",
+      "safety_level": "safe",
+      "available_services": ["住宿", "用餐", "饮酒", "休息"],
+      "notable_npcs": ["旅馆老板", "酒保"]
+    },
+    {
+      "id": "garrison",
+      "name": "城外军营",
+      "description": "国王的军队驻扎的地方",
+      "type": "military",
+      "safety_level": "safe",
+      "available_services": ["军事训练", "情报收集"],
+      "notable_npcs": ["队长", "士兵"]
+    },
+    {
+      "id": "forest",
+      "name": "森林",
+      "description": "村庄附近的森林，是魔王手下出没的地方。可以获取常见药材和食物",
+      "type": "wilderness",
+      "safety_level": "dangerous",
+      "available_services": ["采集", "狩猎", "探索"],
+      "notable_npcs": []
+    },
+    {
+      "id": "mountain",
+      "name": "山",
+      "description": "村庄附近的山，靠近魔王领地，传说有神秘生物出没，无法预计打扰到的后果。可以获取珍稀药材和食物",
+      "type": "wilderness",
+      "safety_level": "very_dangerous",
+      "available_services": ["采集", "探索"],
+      "notable_npcs": []
+    },
+    {
+      "id": "lake",
+      "name": "湖泊",
+      "description": "村庄附近的湖泊，平时村民休闲的地方，但是由于魔王的预告，现在村民不敢去了。可以获取常见药材和食物",
+      "type": "wilderness",
+      "safety_level": "moderate",
+      "available_services": ["钓鱼", "采集", "休闲"],
+      "notable_npcs": []
+    }
+  ],
+  "world_rules": {
+    "weather_system": {
+      "types": ["晴天", "雨天", "阴天", "雾天"]
+    },
+    "day_cycle": {
+      "times_of_day": ["上午", "下午", "晚上"]
+    }
+  }
+}

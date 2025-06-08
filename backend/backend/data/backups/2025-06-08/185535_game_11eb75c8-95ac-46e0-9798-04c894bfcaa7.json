@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "game_id": "game_11eb75c8-95ac-46e0-9798-04c894bfcaa7",
+    "created_at": "2025-06-08T18:54:46.312638",
+    "last_accessed": "2025-06-08T18:55:35.870291",
+    "expires_at": "2025-06-15T18:54:46.312638",
+    "updated_at": "2025-06-08T18:55:35.870291",
+    "version": "1.0",
+    "data_format": "json"
+  },
+  "game_state": {
+    "day": 1,
+    "player": {
+      "basic_info": {
+        "name": "测试勇者",
+        "gender": "男",
+        "profession": "战士",
+        "age": 25
+      },
+      "stats": {
+        "hp": 100,
+        "mp": 100,
+        "strength": 15,
+        "intelligence": 10,
+        "agility": 12,
+        "luck": 8
+      },
+      "equipment": {
+        "chest": "皮甲",
+        "hands": [
+          "铁剑"
+        ],
+        "feet": "皮靴"
+      }
+    },
+    "world": {
+      "current_day": 1,
+      "current_time": "上午",
+      "weather": "晴天",
+      "locations": {
+        "village": {
+          "name": "新手村",
+          "description": "一个宁静的小村庄",
+          "type": "settlement",
+          "safety_level": "safe"
+        },
+        "castle": {
+          "name": "王城",
+          "description": "王国的首都",
+          "type": "settlement",
+          "safety_level": "safe"
+        }
+      }
+    },
+    "npc": {
+      "king": {
+        "name": "国王",
+        "profession": "国王",
+        "age": 60,
+        "gender": "男",
+        "relationship": 0,
+        "stats": {
+          "strength": 40,
+          "intelligence": 75,
+          "agility": 30,
+          "luck": 50
+        },
+        "description": "王国的统治者，智慧且公正，但最近因为王国的危机而忧心忡忡。"
+      },
+      "princess": {
+        "name": "公主",
+        "profession": "公主",
+        "age": 20,
+        "gender": "女",
+        "relationship": 0,
+        "stats": {
+          "strength": 60,
+          "intelligence": 80,
+          "agility": 60,
+          "luck": 65
+        },
+        "description": "王国的公主，聪明且勇敢，对冒险充满向往。具备一定武艺"
+      },
+      "innkeeper": {
+        "name": "旅店老板",
+        "profession": "旅店老板",
+        "age": 50,
+        "gender": "男",
+        "relationship": 0,
+        "stats": {
+          "strength": 40,
+          "intelligence": 55,
+          "agility": 35,
+          "luck": 60
+        },
+        "description": "村庄旅店的老板，热情好客，了解村庄的各种消息。"
+      }
+    },
+    "events": [],
+    "history": [],
+    "created_at": "2025-06-08T18:54:46.312277",
+    "last_action": null
+  }
+}

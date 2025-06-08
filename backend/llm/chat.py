@@ -46,7 +46,7 @@ def get_system_prompt() -> str:
         str: 系统提示信息
     """
     # 优先从环境变量获取系统提示信息
-    system_prompt_path = os.path.join(os.path.dirname(__file__), 'resources', 'prompts', 'system_prompt.txt')
+    system_prompt_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'resources', 'prompts', 'system_prompt.txt')
     
     logger.debug(f"尝试从路径加载系统提示: {system_prompt_path}")
     if os.path.exists(system_prompt_path):
@@ -110,21 +110,41 @@ def create_chat_completion(
     try:
         # 发送请求
         logger.debug(f"发送请求到 API 端点: {api_url}")
-        response = requests.post(api_url, headers=headers, json=payload)
-        
+        logger.debug(f"请求头: {headers}")
+        logger.debug(f"请求体大小: {len(json.dumps(payload))} 字符")
+
+        # 设置60秒超时时间，LLM调用通常需要较长时间
+        timeout = 60
+        logger.info(f"开始发送LLM请求，超时时间: {timeout}秒")
+
+        import time
+        start_time = time.time()
+        response = requests.post(api_url, headers=headers, json=payload, timeout=timeout)
+        end_time = time.time()
+
+        logger.info(f"LLM请求完成，耗时: {end_time - start_time:.2f}秒")
+
         # 检查响应状态
         response.raise_for_status()
-        
+        logger.debug(f"HTTP状态码: {response.status_code}")
+
         # 解析响应
         result = response.json()
         logger.info("成功获取 API 响应")
+        logger.debug(f"响应内容长度: {len(json.dumps(result, ensure_ascii=False))} 字符")
         logger.info(f"响应内容: {json.dumps(result, ensure_ascii=False)[:200]}..." if len(json.dumps(result, ensure_ascii=False)) > 200 else f"响应内容: {json.dumps(result, ensure_ascii=False)}")
-        
+
         # 返回 JSON 响应
         return result
+    except requests.exceptions.Timeout as e:
+        logger.error(f"LLM API 请求超时 (超过{timeout}秒): {e}")
+        raise Exception(f"LLM服务响应超时，请稍后重试")
     except requests.exceptions.RequestException as e:
         logger.error(f"API 请求失败: {e}")
         if hasattr(e, 'response') and e.response:
             logger.error(f"状态码: {e.response.status_code}")
             logger.error(f"响应内容: {e.response.text}")
+        raise Exception(f"LLM服务调用失败: {str(e)}")
+    except Exception as e:
+        logger.error(f"LLM调用过程中发生未知错误: {e}")
         raise

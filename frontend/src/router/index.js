@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import GameView from '../views/GameView.vue'
+import GameMainView from '../views/GameMainView.vue'
+import PrologueView from '../views/prologue/PrologueView.vue'
 
 const routes = [
   {
@@ -9,9 +10,26 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/prologue',
+    name: 'prologue',
+    component: PrologueView
+  },
+  {
+    path: '/game/:gameId',
+    name: 'game-main',
+    component: GameMainView,
+    props: true
+  },
+  {
+    path: '/game/:gameId/end',
+    name: 'game-end',
+    component: () => import('../views/GameEndView.vue'),
+    props: true
+  },
+  // 重定向旧的游戏路由
+  {
     path: '/game',
-    name: 'game',
-    component: GameView
+    redirect: '/'
   }
 ]
 

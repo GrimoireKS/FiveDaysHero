@@ -10,14 +10,20 @@
       "agility": 30,
       "luck": 50
     },
-    "relationship": 0,
-    "description": "王国的统治者，智慧且公正，但最近因为王国的危机而忧心忡忡。",
-    "events": [
-      {
-        "time_of_day": "D1Morning",
-        "description": "国王正在城堡中召开会议，讨论王国的危机。"
-      }
-    ]
+    "description": "王国的统治者，智慧且公正，但最近因为王国的危机而忧心忡忡。"
+  },
+  "queen": {
+    "name": "王后",
+    "age": 58,
+    "gender": "女",
+    "profession": "王后",
+    "stats": {
+      "strength": 30,
+      "intelligence": 70,
+      "agility": 40,
+      "luck": 60
+    },
+    "description": "王国的王后，精通魔法"
   },
   "princess": {
     "name": "公主",
@@ -25,13 +31,25 @@
     "gender": "女",
     "profession": "公主",
     "stats": {
-      "strength": 25,
-      "intelligence": 70,
+      "strength": 60,
+      "intelligence": 80,
       "agility": 60,
       "luck": 65
     },
-    "relationship": 0,
-    "description": "王国的公主，聪明且勇敢，对冒险充满向往。"
+    "description": "王国的公主，聪明且勇敢，对冒险充满向往。具备一定武艺"
+  },
+  "prince": {
+    "name": "王子",
+    "age": 22,
+    "gender": "男",
+    "profession": "王子",
+    "stats": {
+      "strength": 85,
+      "intelligence": 60,
+      "agility": 55,
+      "luck": 55
+    },
+    "description": "王国的王子，决心讨伐魔王，性格较为鲁莽，容易冲动"
   },
   "village_elder": {
     "name": "村长",
@@ -40,11 +58,10 @@
     "profession": "村长",
     "stats": {
       "strength": 30,
-      "intelligence": 65,
+      "intelligence": 60,
       "agility": 25,
       "luck": 45
     },
-    "relationship": 0,
     "description": "村庄的长者，经验丰富，了解许多古老的传说。"
   },
   "blacksmith": {
@@ -58,13 +75,12 @@
       "agility": 40,
       "luck": 35
     },
-    "relationship": 0,
     "description": "村庄的铁匠，能够打造各种武器和防具，为勇者提供装备支持。"
   },
   "merchant": {
     "name": "商人",
     "age": 40,
-    "gender": "男",
+    "gender": "女",
     "profession": "商人",
     "stats": {
       "strength": 30,
@@ -72,8 +88,7 @@
       "agility": 45,
       "luck": 70
     },
-    "relationship": 0,
-    "description": "旅行的商人，出售各种物品和药剂，也收集各地的情报。"
+    "description": "商铺老板，出售各种生活用品，食物，初级药材，也会帮忙合成药剂"
   },
   "mage": {
     "name": "法师",
@@ -86,8 +101,7 @@
       "agility": 35,
       "luck": 55
     },
-    "relationship": 0,
-    "description": "王国的法师，精通各种魔法，能够为勇者提供魔法支持。"
+    "description": "王国的法师，精通各种魔法，能够为勇者提供魔法支持。最后一天参与与魔王的对决"
   },
   "knight_captain": {
     "name": "骑士队长",
@@ -100,7 +114,6 @@
       "agility": 65,
       "luck": 40
     },
-    "relationship": 0,
     "description": "王国骑士团的队长，勇猛善战，负责保卫王国的安全。"
   },
   "innkeeper": {
@@ -114,7 +127,215 @@
       "agility": 35,
       "luck": 60
     },
-    "relationship": 0,
     "description": "村庄旅店的老板，热情好客，了解村庄的各种消息。"
+  },
+  "priest": {
+    "name": "神父",
+    "age": 55,
+    "gender": "男",
+    "profession": "神父",
+    "stats": {
+      "strength": 35,
+      "intelligence": 80,
+      "agility": 30,
+      "luck": 75
+    },
+    "description": "神圣教堂的神父，精通神圣魔法和治疗术，守护着教堂地下的神圣遗宝。"
+  },
+  "nun": {
+    "name": "修女",
+    "age": 30,
+    "gender": "女",
+    "profession": "修女",
+    "stats": {
+      "strength": 25,
+      "intelligence": 70,
+      "agility": 40,
+      "luck": 65
+    },
+    "description": "神圣教堂的修女，温柔善良，擅长治疗魔法，经常帮助村民。"
+  },
+  "garrison_commander": {
+    "name": "军营指挥官",
+    "age": 42,
+    "gender": "男",
+    "profession": "军官",
+    "stats": {
+      "strength": 85,
+      "intelligence": 65,
+      "agility": 60,
+      "luck": 45
+    },
+    "description": "城外军营的指挥官，经验丰富的战士，负责保卫村庄免受魔王军队的侵扰。"
+  },
+  "soldier": {
+    "name": "士兵",
+    "age": 28,
+    "gender": "男",
+    "profession": "士兵",
+    "stats": {
+      "strength": 65,
+      "intelligence": 40,
+      "agility": 55,
+      "luck": 35
+    },
+    "description": "军营中的普通士兵，忠诚勇敢，随时准备为保卫村庄而战。"
+  },
+  "bartender": {
+    "name": "酒保",
+    "age": 38,
+    "gender": "女",
+    "profession": "酒保",
+    "stats": {
+      "strength": 45,
+      "intelligence": 60,
+      "agility": 50,
+      "luck": 55
+    },
+    "description": "旅馆酒吧的酒保，善于倾听，知道许多村庄的秘密和传言。"
+  },
+  "pharmacist": {
+    "name": "药师",
+    "age": 45,
+    "gender": "女",
+    "profession": "药师",
+    "stats": {
+      "strength": 30,
+      "intelligence": 75,
+      "agility": 40,
+      "luck": 60
+    },
+    "description": "村庄的药师，精通草药学，能够制作各种药剂和治疗用品。"
+  },
+  "scholar": {
+    "name": "学者",
+    "age": 60,
+    "gender": "男",
+    "profession": "学者",
+    "stats": {
+      "strength": 20,
+      "intelligence": 90,
+      "agility": 25,
+      "luck": 70
+    },
+    "description": "教堂图书馆的学者，博学多才，了解古老的传说和魔王的历史。"
+  },
+  "forest_guardian": {
+    "name": "森林守护者",
+    "age": 200,
+    "gender": "男",
+    "profession": "守护者",
+    "stats": {
+      "strength": 70,
+      "intelligence": 85,
+      "agility": 80,
+      "luck": 60
+    },
+    "description": "森林的古老守护者，精灵族的长者，拥有强大的自然魔法，警惕着魔王的手下。"
+  },
+  "hermit_mage": {
+    "name": "隐居法师",
+    "age": 80,
+    "gender": "女",
+    "profession": "法师",
+    "stats": {
+      "strength": 25,
+      "intelligence": 95,
+      "agility": 35,
+      "luck": 80
+    },
+    "description": "在森林深处隐居的强大法师，掌握着古老的魔法知识，可能是勇者的重要导师。"
+  },
+
+  "mountain_hermit": {
+    "name": "山中隐士",
+    "age": 70,
+    "gender": "男",
+    "profession": "隐士",
+    "stats": {
+      "strength": 60,
+      "intelligence": 80,
+      "agility": 50,
+      "luck": 75
+    },
+    "description": "在山中修行的隐士，拥有预知能力，了解许多关于魔王和勇者命运的秘密。"
+  },
+  "prime_minister": {
+    "name": "宰相",
+    "age": 55,
+    "gender": "男",
+    "profession": "宰相",
+    "stats": {
+      "strength": 30,
+      "intelligence": 85,
+      "agility": 35,
+      "luck": 65
+    },
+    "description": "王国的宰相，国王的首席顾问，精通政治和策略，对王国的历史和魔王的威胁有深刻了解。"
+  },
+  "royal_mage": {
+    "name": "王室法师",
+    "age": 65,
+    "gender": "女",
+    "profession": "法师",
+    "stats": {
+      "strength": 25,
+      "intelligence": 90,
+      "agility": 40,
+      "luck": 70
+    },
+    "description": "王室的首席法师，掌握着强大的魔法，是国王最信任的魔法顾问。"
+  },
+  "village_child": {
+    "name": "村庄孩子",
+    "age": 10,
+    "gender": "女",
+    "profession": "村民",
+    "stats": {
+      "strength": 10,
+      "intelligence": 40,
+      "agility": 60,
+      "luck": 80
+    },
+    "description": "村庄里天真烂漫的孩子，对勇者充满崇拜，可能会提供意想不到的帮助。"
+  },
+  "old_villager": {
+    "name": "老村民",
+    "age": 75,
+    "gender": "男",
+    "profession": "村民",
+    "stats": {
+      "strength": 20,
+      "intelligence": 65,
+      "agility": 15,
+      "luck": 50
+    },
+    "description": "村庄的老人，见证了许多历史，知道一些关于魔王和古老传说的故事。"
+  },
+  "demon_scout": {
+    "name": "魔族斥候",
+    "age": 150,
+    "gender": "男",
+    "profession": "魔族",
+    "stats": {
+      "strength": 70,
+      "intelligence": 60,
+      "agility": 85,
+      "luck": 40
+    },
+    "description": "魔王派遣的斥候，潜伏在村庄附近收集情报，是勇者的潜在敌人。"
+  },
+  "traveling_merchant": {
+    "name": "旅行商人",
+    "age": 35,
+    "gender": "男",
+    "profession": "商人",
+    "stats": {
+      "strength": 40,
+      "intelligence": 70,
+      "agility": 60,
+      "luck": 85
+    },
+    "description": "来自远方的旅行商人，带来珍稀物品和外界的消息，可能有特殊的交易。"
   }
 }
